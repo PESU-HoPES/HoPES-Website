@@ -1,21 +1,32 @@
-name: Frontend Feature Suggestion
+name: 😎 Frontend Feature Suggestion
 title: '[FEATURE SUGGESTION] Feature'
 description: 'Create a new ticket for a new feature suggestion'
 labels: 
   - frontend
+  - enhancement
 assignees: 
   - SarangKumar
 
 body:
 
   - type: textarea
-    id: feature-description
+    id: feature-description-summary
     attributes:
-      label: "Description"
-      description: Please enter an explicit description of your feature request and alse provide reference link/image
+      label: Summary Suggestion
+      description: Please enter an explicit description of your feature suggestion
       placeholder: Short and explicit description of your incident...
     validations:
       required: true
+
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: "Detailed Description of the Suggestion"
+      description: Please enter a detailed description of your feature request and alse provide reference link/image
+      placeholder: Explicit description of your incident...
+    validations:
+      required: false
     
   - type: dropdown
     id: priority
@@ -24,11 +35,23 @@ body:
       description: Specify the urgency for this requirement
       multiple: false
       options: 
-        - Less Urgent (DEFAULT)
+        - Less Urgent
         - Mid Urgent
         - Very Urgent
     validations:
       required: true
 
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Code of Conduct
+      description: The Code of Conduct helps create a safe space for everyone. We require that everyone agrees to it.
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
 
-      
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for taking the time to fill out this suggestion issue form!
