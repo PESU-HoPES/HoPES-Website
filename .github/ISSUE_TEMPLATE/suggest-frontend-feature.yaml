@@ -1,6 +1,6 @@
 name: Frontend Feature Suggestion
 title: '[FEATURE SUGGESTION] Feature'
-description: 'd'
+description: 'Create a new ticket for a new feature suggestion'
 labels: 
   - frontend
 assignees: 
