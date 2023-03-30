@@ -1,0 +1,34 @@
+name: Frontend Feature Suggestion
+title: '[FEATURE SUGGESTION] Feature'
+description: 'd'
+labels: 
+  - frontend
+assignees: 
+  - SarangKumar
+
+body:
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: "Description"
+      description: Please enter an explicit description of your feature request and alse provide reference link/image
+      placeholder: Short and explicit description of your incident...
+    validations:
+      required: true
+    
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority level
+      description: Specify the urgency for this requirement
+      multiple: false
+      options: 
+        - Less Urgent (DEFAULT)
+        - Mid Urgent
+        - Very Urgent
+    validations:
+      required: true
+
+
+      
