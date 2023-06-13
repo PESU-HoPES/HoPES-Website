@@ -1,8 +1,8 @@
 import Cursor from './components/Cursor'
 import './globals.css'
-import { Inter, Montserrat } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 
-// const inter = Inter({ subsets: ['latin'] })
+
 const montserrat = Montserrat({subsets: ['latin']})
 
 export const metadata = {
