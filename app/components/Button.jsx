@@ -21,7 +21,7 @@ const Button = ({ children, type = 'default', wide = false }) => {
 
             <button className='sr-only'>{children}</button>
             <button
-                className={`${type == 'primary' ? 'bg-primary-700' : 'bg-transparent outline -outline-offset-1 outline-white'} ${wide ? 'px-12' : 'px-4'} custom-button rounded-full py-1`}
+                className={`${type == 'primary' ? 'bg-primary-600' : 'bg-transparent border-[0.5px] border-primary-600'} ${wide ? 'px-12' : 'px-4'} custom-button rounded-full py-1`}
                 onMouseEnter={changeButton}
             >
                 <span
