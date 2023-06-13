@@ -5,7 +5,7 @@ import Button from './Button'
 
 const Navbar = () => {
     return (
-        <nav className='flex justify-between py-4 px-5 border-b-primary-600 border-b'>
+        <nav className='flex justify-between py-4 px-5 border-b-primary-600 border-b-[0.3px]'>
             <div className='flex gap-x-4 items-center'>
                 <p>logo</p>
             </div>
