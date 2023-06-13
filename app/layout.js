@@ -1,3 +1,4 @@
+import Cursor from './components/Cursor'
 import './globals.css'
 import { Inter, Montserrat } from 'next/font/google'
 
@@ -12,7 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-background text-white`}>{children}</body>
+      <body className={`${montserrat.className} bg-background text-white`}>
+      <Cursor />
+      {children}
+      </body>
     </html>
   )
 }
