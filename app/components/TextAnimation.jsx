@@ -22,13 +22,13 @@ const TextAnimation = ({ children, size = 'default' }) => {
         }
     }
     return (
-        <motion.h1
+        <motion.span
             className=''
             variants={textAnimateVariant}
             initial='hidden'
             animate='show'
         >
-            <div className='relative' ref={scope} onClick={animateText}>
+            <span className='relative    ' ref={scope} onClick={animateText}>
                 {children.split('').map((c, index) => (
                     <motion.span
                         initial={{
@@ -53,8 +53,8 @@ const TextAnimation = ({ children, size = 'default' }) => {
                         {c}
                     </motion.span>
                 ))}
-            </div>
-        </motion.h1>
+            </span>
+        </motion.span>
     )
 }
 export default TextAnimation

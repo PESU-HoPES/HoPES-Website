@@ -85,21 +85,22 @@ export default function Navbar() {
                         {navlinks.map((navlink) => (
                             <motion.li
                                 key={navlink.id}
+                                layout
                                 className='inline-block -my-2 md:-my-4'
-                                whileHover={{ x: 50, scale: 1.1 }}
+                                whileHover={{ x: 50, scale: 1.1, letterSpacing: '5px' }}
                             >
                                 {navlink.title.split('').map((c, index) => (
                                     <Link
                                         key={index}
                                         onClick={() => setIsOpen(!isOpen)}
                                         href={navlink.href}
+                                        className="w-full"
                                     >
-                                        <motion.span
-                                            // whileHover={{ backgroundColor: 'red' }}
+                                        <span
                                             className='word inline-block md:text-[5rem] sm:text-[4rem] text-[3.5rem] font-extrabold '
                                         >
                                             {c}
-                                        </motion.span>
+                                        </span>
                                     </Link>
                                 ))}
                             </motion.li>
