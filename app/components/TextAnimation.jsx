@@ -4,10 +4,10 @@ import { motion, useAnimate } from 'framer-motion';
 import React from 'react'
 
 
-const TextAnimation = ({ children, size='large' }) => {
+const TextAnimation = ({ children, size = 'default' }) => {
     const [scope, animate] = useAnimate();
     const animateText = () => {
-        console.log('ads')
+        // console.log('ads')
         animate([
             [".line", { width: '600px' }, { duration: 0.3 }],
             [".line", { width: '0px' }, { duration: 0.3 }],
@@ -29,7 +29,6 @@ const TextAnimation = ({ children, size='large' }) => {
             animate='show'
         >
             <div className='relative' ref={scope} onClick={animateText}>
-                {/* <span className=' relative w-0 line z-20 block'></span> */}
                 {children.split('').map((c, index) => (
                     <motion.span
                         initial={{
@@ -48,7 +47,7 @@ const TextAnimation = ({ children, size='large' }) => {
                             stiffness: 100,
                             delay: index * 0.1,
                         }}
-                        className={`${size==='large' ? 'text-[5rem] font-bold' : '' } inline-block lowercase bg-transparent`}
+                        className={`${size === 'large' ? 'text-[5rem] font-bold' : ''} inline-block lowercase bg-transparent`}
                         key={index}
                     >
                         {c}
