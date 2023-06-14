@@ -16,8 +16,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${montserrat.className} bg-background text-white`}>
       <Cursor />
+      {/* <nav className='fixed top-0 bg-orange-400 '> */}
+      {/* </nav> */}
+
       <Navbar />
-      <div className='mt-20'>
+      <div className='mt-24'>
       {children}
       </div>
       </body>
