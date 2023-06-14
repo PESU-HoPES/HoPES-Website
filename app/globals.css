@@ -76,3 +76,36 @@ body {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
+
+/* 
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px dotted pink;
+  
+  font-size: 14px;
+  line-height: 14px;
+}
+*/
+
+.navbar {
+  /* background-image: radial-gradient(
+      circle at 50% 50%,
+      #333333dd 20%,
+      #fffd 20.5%,
+      #fffd 49.5%,
+      #333d 50% 
+      ); */
+  background-size: 15px 15px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  -moz-backdrop-filter: blur(20px);
+}

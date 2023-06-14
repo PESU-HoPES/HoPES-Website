@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <body className={`${montserrat.className} bg-background text-white`}>
         <Cursor />
 
-        <nav className='z-50 fixed top-0 border-b border-b-primary-700 w-full h-[88px] bg-background '>
+        <nav className='navbar z-50 fixed top-0 border-b border-b-primary-700 w-full h-[88px] bg-background '>
           <Navbar />
         </nav>
         <div className='mt-28 sm:mx-4 md:mx-6'>

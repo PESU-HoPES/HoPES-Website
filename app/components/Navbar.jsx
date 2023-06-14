@@ -34,7 +34,7 @@ function useMenuAnimation(isOpen) {
                     {
                         transform: 'scale(0.2)',
                         opacity: 0,
-                        filter: 'blur(2px)',
+                        filter: 'blur(5px)',
                     },
                     { delay: stagger(0.03, { from: 'last' }), at: '<' },
                 ],
@@ -70,16 +70,23 @@ export default function Navbar() {
     const scope = useMenuAnimation(isOpen);
 
     return (
-        <div ref={scope} className='z-50'>
-            <nav className='menu fixed right-0 top-0 z-50 w-full translate-x-full transform bg-primary-700 pt-[100px]'>
-                <div className='no-scroll flex items-center justify-between h-full gap-3 px-10'>
-                    <div>asdfaf</div>
-                    <ul className='flex flex-col justify-end text-right'>
+        <div ref={scope} className='z-50 overflow-scroll'>
+            <nav className='fixed right-0 top-0 z-50 w-full min-h-[100dvh] translate-x-full transform bg-primary-700 pt-[100px]'>
+                <div className='min-h-full flex flex-col-reverse sm:flex-row items-start sm:items-end px-10 sm:px-16 sm:justify-between justify-start h-full gap-x-3 gap-y-12'>
+                    <div className='flex-grow font-medium flex flex-col gap-y-5'>
+                        <p className='tracking-[0.1rem] text-sm'>GET IN TOUCH</p>
+                        <div className="text-3xl sm:text-4xl">
+                            <h1>website url</h1>
+                            <h1>name</h1>
+                            <h1>url</h1>
+                        </div>
+                    </div>
+                    <ul className='flex flex-col flex-grow'>
                         {navlinks.map((navlink) => (
                             <motion.li
                                 key={navlink.id}
-                                className='inline-block'
-                                whileHover={{ x: -80, scale: 1.2 }}
+                                className='inline-block -my-2 md:-my-4'
+                                whileHover={{ x: 50, scale: 1.1 }}
                             >
                                 {navlink.title.split('').map((c, index) => (
                                     <Link
@@ -88,8 +95,8 @@ export default function Navbar() {
                                         href={navlink.href}
                                     >
                                         <motion.span
-                                            whileHover={{ backgroundColor: 'red' }}
-                                            className='word inline-block text-[4rem] font-bold'
+                                            // whileHover={{ backgroundColor: 'red' }}
+                                            className='word inline-block md:text-[5rem] sm:text-[4rem] text-[3.5rem] font-extrabold '
                                         >
                                             {c}
                                         </motion.span>

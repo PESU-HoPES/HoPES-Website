@@ -24,14 +24,14 @@ export const navlinks = [
         title: 'Option4',
         href:'option',
     },
-    {
-        id: 7,
-        title: 'Option4',
-        href:'option',
-    },
-    {
-        id: 6,
-        title: 'Option4',
-        href:'option',
-    },
+    // {
+    //     id: 7,
+    //     title: 'Option4',
+    //     href:'option',
+    // },
+    // {
+    //     id: 6,
+    //     title: 'Option4',
+    //     href:'option',
+    // },
 ]
