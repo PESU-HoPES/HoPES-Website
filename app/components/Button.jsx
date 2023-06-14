@@ -11,8 +11,6 @@ const Button = ({ children, type = 'default', wide = false }) => {
             ['button', { scale: 1.1 }, { duration: 0.1, at: '<' }],
             ['button', { scale: 1 }, { duration: 0.1 }],
             ['.letter', { y: 0 }, { duration: 0.000001 }],
-
-            // ['.custom-button', {opacity: 0.5}, {duration: 0.3}]
         ]);
     };
 

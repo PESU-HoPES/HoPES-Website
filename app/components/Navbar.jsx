@@ -38,7 +38,7 @@ function useMenuAnimation(isOpen) {
                     },
                     { delay: stagger(0.03, { from: 'last' }), at: '<' },
                 ],
-                ['nav', { transform: 'translateX(-100%)' }, { at: '-0.1' }],
+                ['nav', { transform: 'translateX(100%)' }, { at: '-0.1' }],
             ];
 
         animate([
@@ -71,33 +71,39 @@ export default function Navbar() {
 
     return (
         <div ref={scope} className='z-50'>
-            <nav className='menu fixed bottom-0 left-0 top-0 z-50 w-full translate-x-full transform bg-yellow-700 pt-[100px]'>
-                <ul className='flex flex-col gap-3 p-4 md:mx-10 h-full overflow-y-scroll'>
-                    {navlinks.map((navlink) => (
-                        <motion.li
-                            key={navlink.id}
-                            className='block'
-                            whileHover={{ x: 100, scale: 1.2, }}
-                            drag="x"
-                            dragConstraints={{ left: 0, right: '100%' }}
-                        >
-                            {navlink.title.split('').map((c, index) => (
-                                <Link
-                                    key={index}
-                                    onClick={() => setIsOpen(!isOpen)}
-                                    href={navlink.href}
-
-                                >
-                                    <span className='word inline-block text-[4rem] font-bold'>
-                                        {c}
-                                    </span>
-                                </Link>
-                            ))}
-                        </motion.li>
-                    ))}
-                </ul>
+            <nav className='menu fixed right-0 top-0 z-50 w-full translate-x-full transform bg-primary-700 pt-[100px]'>
+                <div className='no-scroll flex items-center justify-between h-full gap-3 px-10'>
+                    <div>asdfaf</div>
+                    <ul className='flex flex-col justify-end text-right'>
+                        {navlinks.map((navlink) => (
+                            <motion.li
+                                key={navlink.id}
+                                className='inline-block'
+                                whileHover={{ x: -80, scale: 1.2 }}
+                            >
+                                {navlink.title.split('').map((c, index) => (
+                                    <Link
+                                        key={index}
+                                        onClick={() => setIsOpen(!isOpen)}
+                                        href={navlink.href}
+                                    >
+                                        <motion.span
+                                            whileHover={{ backgroundColor: 'red' }}
+                                            className='word inline-block text-[4rem] font-bold'
+                                        >
+                                            {c}
+                                        </motion.span>
+                                    </Link>
+                                ))}
+                            </motion.li>
+                        ))}
+                    </ul>
+                </div>
             </nav>
-            <MenuToggle toggle={() => setIsOpen(!isOpen)} />
+            <div className='m-5 flex items-center justify-between gap-5'>
+                <Link href='/'>logo</Link>
+                <MenuToggle toggle={() => setIsOpen(!isOpen)} />
+            </div>
         </div>
     );
 }
@@ -114,24 +120,25 @@ const Path = (props) => (
 
 export const MenuToggle = ({ toggle }) => (
     <button
-        className='absolute left-[15px] top-[18px] z-50 flex h-[50px] w-[50px] items-center justify-center rounded-full bg-primary-600 p-[10px]'
-        onClick={toggle}>
-        <svg width="23" height="23" viewBox="0 0 23 18">
+        className='z-50 flex h-[50px] w-[50px] items-center justify-center rounded-full bg-primary-600 p-[10px]'
+        onClick={toggle}
+    >
+        <svg width='23' height='23' viewBox='0 0 23 18'>
             <Path
-                d="M 2 2.5 L 20 2.5"
-                className="top"
+                d='M 2 2.5 L 20 2.5'
+                className='top'
                 variants={{
-                    closed: { d: "M 2 2.5 L 20 2.5" },
-                    open: { d: "M 3 16.5 L 17 2.5" }
+                    closed: { d: 'M 2 2.5 L 20 2.5' },
+                    open: { d: 'M 3 16.5 L 17 2.5' },
                 }}
             />
-            <Path d="M 2 9.423 L 20 9.423" opacity="1" className="middle" />
+            <Path d='M 2 9.423 L 20 9.423' opacity='1' className='middle' />
             <Path
-                d="M 2 16.346 L 20 16.346"
-                className="bottom"
+                d='M 2 16.346 L 20 16.346'
+                className='bottom'
                 variants={{
-                    closed: { d: "M 2 16.346 L 20 16.346" },
-                    open: { d: "M 3 2.5 L 17 16.346" }
+                    closed: { d: 'M 2 16.346 L 20 16.346' },
+                    open: { d: 'M 3 2.5 L 17 16.346' },
                 }}
             />
         </svg>

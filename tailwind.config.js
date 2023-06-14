@@ -21,7 +21,8 @@ module.exports = {
           900: 'rgb(184, 26, 27)',
           950: 'rgb(148, 21, 22)',
         },
-        background: '#0d1117',
+        // background: '#0d1117',
+        background: '#161b22',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],

@@ -5,7 +5,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+* {
+  box-sizing: border-box;
+}
 
+body {
+  /* background: linear-gradient(to right, #333 1px, transparent 1px),
+    linear-gradient(to bottom, #333 1px, transparent 1px);
+  background-size: 30px 30px;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333; */
+}
+
+/* cursor */
 .cursor {
   --size: 40px;
 
@@ -36,11 +48,10 @@
   transition-duration: .7s;
 }
 
-
+/* scrollbar */
 ::-webkit-scrollbar {
   height: 5px;
   width: 5px;
-  /* background: var(--background); */
   -webkit-border-radius: 1ex;
 }
 
@@ -52,6 +63,7 @@
 ::-webkit-scrollbar-corner {
   background: #fff3;
 }
+
 
 .text-gradient {
   margin-inline: 5px;
