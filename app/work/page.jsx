@@ -6,15 +6,15 @@ import Subnavbar from '../components/Subnavbar'
 const WorkPage = () => {
   return (
     <>
-      <div className='flex flex-col mx-auto items-center max-w-[700px] '>
+      <div className='my-[10vmin] flex flex-col mx-auto items-center md:max-w-[900px] sm:max-w-[720px] ss:max-w-[600px] xs:max-w-[400px] max-w-[300px]'>
         <div className='mr-auto'>
-          <TextAnimation size='large'>
-            Explore&nbsp;our&nbsp;
+          <TextAnimation size='larger'>
+            Explore&nbsp;our
           </TextAnimation>
         </div>
-        <div className='ml-auto -mt-12'>
-          <TextAnimation size='large'>
-            Explore&nbsp;our&nbsp;
+        <div className='ml-auto sm:-mt-6 '>
+          <TextAnimation size='larger'>
+            latest&nbsp;project
           </TextAnimation>
         </div>
       </div>

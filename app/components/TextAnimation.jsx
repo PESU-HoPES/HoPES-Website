@@ -28,7 +28,7 @@ const TextAnimation = ({ children, size = 'default' }) => {
             initial='hidden'
             animate='show'
         >
-            <span className='relative    ' ref={scope} onClick={animateText}>
+            <span className={`${size === 'larger' ? 'my-5' : size === 'large' ? '' : ''} relative whitespace-nowrap`} ref={scope} onClick={animateText}>
                 {children.split('').map((c, index) => (
                     <motion.span
                         initial={{
@@ -47,7 +47,7 @@ const TextAnimation = ({ children, size = 'default' }) => {
                             stiffness: 100,
                             delay: index * 0.1,
                         }}
-                        className={`${size === 'large' ? 'text-[5rem] font-bold' : ''} inline-block lowercase bg-transparent`}
+                        className={`${size === 'larger' ? 'md:text-[7rem] font-extrabold md:font-bold ss:text-[4.5rem] xs:text-[3rem] text-[2.5rem]' : 'large' ? 'text-[5rem] font-bold' : ''} inline-block lowercase bg-transparent`}
                         key={index}
                     >
                         {c}
