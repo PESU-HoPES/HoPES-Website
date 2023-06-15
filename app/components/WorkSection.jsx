@@ -10,7 +10,6 @@ const WorkSection = () => {
     const [label, setLabel] = useState('all');
     const [workData, setWorkData] = useState(worksData);
 
-
     useEffect(() => {
         let filterWorkData = worksData.filter((data) =>
             data.categories.includes(label)
@@ -24,7 +23,11 @@ const WorkSection = () => {
                 <Subnavbar setLabel={setLabel} label={label} />
             </section>
 
-            <motion.div layout className='flex items-start justify-center flex-wrap'>
+            {/* <motion.div
+                layout
+                className='grid grid-cols-autofit bg-orange-400'
+            > */}
+                <motion.div layout className='flex items-start justify-center flex-wrap'>
                 {workData.map((data) => (
                     <WorkCard
                         id={data.id}

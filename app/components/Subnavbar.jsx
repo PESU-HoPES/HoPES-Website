@@ -27,7 +27,7 @@ export default function Subnavbar({ label, setLabel }) {
                     {activeTab === tab.id && (
                         <motion.span
                             layoutId="bubble"
-                            className="font-poppins absolute inset-0 z-10 bg-white mix-blend-difference"
+                            className="font-poppins absolute inset-0 z-10 bg-primary-100 mix-blend-difference"
                             style={{ borderRadius: 9999 }}
                             transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                         />

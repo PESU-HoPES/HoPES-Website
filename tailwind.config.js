@@ -30,7 +30,7 @@ module.exports = {
         opensans: ['Open Sans', 'sans-serif'],
       },
       gridTemplateColumns:{
-        'work': 'repeat( minmax(150px, 1fr))',
+        'autofit': 'repeat( minmax( 150px , 1fr ))',
       },
       boxShadow: {
         'custom-xs': 'rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px',

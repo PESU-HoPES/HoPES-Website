@@ -49,8 +49,7 @@ export const worksData = [
     {
         id: 1,
         imageUrl: '/img1.jpg',
-        heading:
-            'Highlighting urban redevelopment ni VR',
+        heading: 'Highlighting urban redevelopment ni VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA', 'nexus'],
         categories: ['all', 'picture', 'hopes', 'web'],
@@ -58,8 +57,7 @@ export const worksData = [
     {
         id: 2,
         imageUrl: '/img2.jpg',
-        heading:
-            'A purrfect immersize experience for the felines and friends of POTT',
+        heading: 'A purrfect immersize experience for the felines and friends of POTT',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
         categories: ['all', 'web', 'science'],
@@ -67,8 +65,7 @@ export const worksData = [
     {
         id: 3,
         imageUrl: '/img1.jpg',
-        heading:
-            'Building a community',
+        heading: 'Building a community',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
         categories: ['all', 'videography'],
@@ -76,8 +73,7 @@ export const worksData = [
     {
         id: 4,
         imageUrl: '/img2.jpg',
-        heading:
-            'Spreading its virtual wings',
+        heading: 'Spreading its virtual wings',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
         categories: ['all', 'picture'],
@@ -85,8 +81,7 @@ export const worksData = [
     {
         id: 5,
         imageUrl: '/img1.jpg',
-        heading:
-            'Building brand loyality through online design tool',
+        heading: 'Building brand loyality through online design tool',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
         categories: ['all', 'web', 'hopes'],
@@ -94,10 +89,14 @@ export const worksData = [
     {
         id: 6,
         imageUrl: '/img2.jpg',
-        heading:
-            'Revolutionizing safety training in the workplace with VR',
+        heading: 'Revolutionizing safety training in the workplace with VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
         categories: ['all', 'photo', 'videography'],
     },
 ];
+
+// import {img1} from '/img1.jpg'
+// import {img2} from '/img2.jpg'
+
+// export {img1, img2}
