@@ -34,7 +34,7 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                             className='-z-10 workimage overflow-hidden rounded-lg md:rounded-xl bg-orange-100 object-cover'
                             src={imageUrl}
                             height={400}
-                            width={400}
+                            width={300}
                             alt={`${heading} thumbnail`}
                         />
                     </Suspense>
