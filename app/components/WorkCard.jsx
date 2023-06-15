@@ -1,4 +1,4 @@
-import { worksData } from '@/constants';
+import { img1 } from '@/public/assets/importing';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import React, { Suspense } from 'react';
@@ -14,17 +14,19 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                 className='m-5 flex max-w-[450px] flex-col items-start justify-start gap-y-2'
             >
                 <Suspense fallback={<p>loading..</p>}>
+                    {/* <img */}
                     <Image
                         // style={{ objectFit: "contain" }}
                         loading='lazy'
-                        className='workimage mx-5 h-full w-full overflow-hidden rounded-lg md:rounded-xl bg-orange-100 object-cover'
+                        className='workimage h-full w-full overflow-hidden rounded-lg md:rounded-xl bg-orange-100 object-cover'
                         src={imageUrl}
+                        // src={img1}
                         height={300}
                         width={400}
                         alt={`${heading} thumbnail`}
                     />
                 </Suspense>
-                <motion.div layout className='space-y-2 p-3 mx-2'>
+                <motion.div layout className='space-y-2 p-3'>
                     <h1 className='line-clamp-2 text-lg sm:text-2xl'>{heading}</h1>
                     {/* <p>{desc}</p> */}
                     <div className='flex gap-x-4'>

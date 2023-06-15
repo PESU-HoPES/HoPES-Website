@@ -1,7 +1,7 @@
 'use client';
 
 import { stagger, useAnimate } from 'framer-motion';
-import React, { Children } from 'react';
+import React from 'react';
 
 const Button = ({ children, type = 'default', wide = false }) => {
     const [scope, animate] = useAnimate();

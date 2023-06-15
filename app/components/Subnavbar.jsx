@@ -1,6 +1,6 @@
 'use client'
 
-import { filterTabs } from "@/constants";
+import { filterTabs } from "@/public/constants";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 
 export default function Subnavbar({ label, setLabel }) {
     const [activeTab, setActiveTab] = useState(filterTabs[0].id);
-    
+
     useEffect(() => {
         setLabel(activeTab)
     }, [activeTab])

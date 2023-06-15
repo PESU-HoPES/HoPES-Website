@@ -3,7 +3,7 @@
 // import "./styles.css";
 import { useState, useEffect } from 'react';
 import { useAnimate, stagger, motion } from 'framer-motion';
-import { navlinks } from '@/constants';
+import { navlinks } from '@/public/constants';
 
 import Link from 'next/link';
 
