@@ -1,5 +1,4 @@
-import {instagram} from './icons/instagram.svg'
-import {img1} from './images/work/img1.jpg'
-import {img2} from './images/work/img2.jpg'
+import { instagram } from './icons/instagram.svg'
 
-export {instagram, img1, img2}
+
+export { instagram }

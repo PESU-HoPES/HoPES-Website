@@ -6,6 +6,7 @@ import WorkCard from './WorkCard';
 import { worksData } from '@/public/constants';
 import { motion } from 'framer-motion';
 
+
 const WorkSection = () => {
     const [label, setLabel] = useState('all');
     const [workData, setWorkData] = useState(worksData);

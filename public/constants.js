@@ -48,7 +48,7 @@ export const filterTabs = [
 export const worksData = [
     {
         id: 1,
-        imageUrl: '/img1.jpg',
+        imageUrl: '/../public/assets/images/work/img1.jpg',
         heading: 'Highlighting urban redevelopment ni VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA', 'nexus'],
@@ -56,7 +56,7 @@ export const worksData = [
     },
     {
         id: 2,
-        imageUrl: '/img2.jpg',
+        imageUrl: '/../public/assets/images/work/img2.jpg',
         heading: 'A purrfect immersize experience for the felines and friends of POTT',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
@@ -64,7 +64,7 @@ export const worksData = [
     },
     {
         id: 3,
-        imageUrl: '/img1.jpg',
+        imageUrl: '/../public/assets/images/work/img3.jpg',
         heading: 'Building a community',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
@@ -72,7 +72,7 @@ export const worksData = [
     },
     {
         id: 4,
-        imageUrl: '/img2.jpg',
+        imageUrl: '/../public/assets/images/work/img4.jpg',
         heading: 'Spreading its virtual wings',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
@@ -80,7 +80,7 @@ export const worksData = [
     },
     {
         id: 5,
-        imageUrl: '/img1.jpg',
+        imageUrl: '/../public/assets/images/work/img5.jpg',
         heading: 'Building brand loyality through online design tool',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
@@ -88,15 +88,58 @@ export const worksData = [
     },
     {
         id: 6,
-        imageUrl: '/img2.jpg',
+        imageUrl: '/../public/assets/images/work/img6.jpg',
+        heading: 'Revolutionizing safety training in the workplace with VR',
+        desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
+        clubs: ['VERSELE LAGA'],
+        categories: ['all', 'photo', 'videography'],
+    },
+    {
+        id: 7,
+        imageUrl: '/../public/assets/images/work/img1.jpg',
+        heading: 'Highlighting urban redevelopment ni VR',
+        desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
+        clubs: ['VERSELE LAGA', 'nexus'],
+        categories: ['all', 'picture', 'hopes', 'web'],
+    },
+    {
+        id: 8,
+        imageUrl: '/../public/assets/images/work/img2.jpg',
+        heading: 'A purrfect immersize experience for the felines and friends of POTT',
+        desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
+        clubs: ['VERSELE LAGA'],
+        categories: ['all', 'web', 'science'],
+    },
+    {
+        id: 9,
+        imageUrl: '/../public/assets/images/work/img3.jpg',
+        heading: 'Building a community',
+        desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
+        clubs: ['VERSELE LAGA'],
+        categories: ['all', 'videography'],
+    },
+    {
+        id: 10,
+        imageUrl: '/../public/assets/images/work/img4.jpg',
+        heading: 'Spreading its virtual wings',
+        desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
+        clubs: ['VERSELE LAGA'],
+        categories: ['all', 'picture'],
+    },
+    {
+        id: 11,
+        imageUrl: '/../public/assets/images/work/img5.jpg',
+        heading: 'Building brand loyality through online design tool',
+        desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
+        clubs: ['VERSELE LAGA'],
+        categories: ['all', 'web', 'hopes'],
+    },
+    {
+        id: 12,
+        imageUrl: '/../public/assets/images/work/img6.jpg',
         heading: 'Revolutionizing safety training in the workplace with VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
         categories: ['all', 'photo', 'videography'],
     },
 ];
-
-// import {img1} from '/img1.jpg'
-// import {img2} from '/img2.jpg'
-
-// export {img1, img2}
