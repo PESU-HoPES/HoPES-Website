@@ -14,6 +14,7 @@ export default function Subnavbar({ label, setLabel }) {
     }, [activeTab])
 
     return (
+
         <div className="relative flex space-x-1">
             {filterTabs.map((tab) => (
                 <button

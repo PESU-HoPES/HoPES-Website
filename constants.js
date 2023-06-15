@@ -41,7 +41,7 @@ export const filterTabs = [
     { id: 'picture', label: 'Pictures' },
     { id: 'web', label: 'Web' },
     { id: 'hopes', label: 'Hopes' },
-    { id: 'science', label: 'Science' },
+    { id: 'videography', label: 'Videography' },
 ];
 
 
@@ -60,7 +60,38 @@ export const worksData = [
         heading: 'A purrfect immersize experience for the felines and friends of POTT',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
-        categories: ['web', 'picture', 'club']
-
+        categories: ['all','web', 'science']
+    },
+    {
+        id: 3,
+        imageUrl: '/img1.jpg',
+        heading: 'A purrfect immersize experience for the felines and friends of POTT',
+        desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
+        clubs: ['VERSELE LAGA'],
+        categories: ['all', 'videography']
+    },
+    {
+        id: 4,
+        imageUrl: '/img2.jpg',
+        heading: 'A purrfect immersize experience for the felines and friends of POTT',
+        desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
+        clubs: ['VERSELE LAGA'],
+        categories: ['all', 'picture']
+    },
+    {
+        id: 5,
+        imageUrl: '/img1.jpg',
+        heading: 'A purrfect immersize experience for the felines and friends of POTT',
+        desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
+        clubs: ['VERSELE LAGA'],
+        categories: ['all','web', 'hopes']
+    },
+    {
+        id: 6,
+        imageUrl: '/img2.jpg',
+        heading: 'A purrfect immersize experience for the felines and friends of POTT',
+        desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
+        clubs: ['VERSELE LAGA'],
+        categories: ['all','photo', 'videography']
     }
 ]
