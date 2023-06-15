@@ -42,56 +42,62 @@ export const filterTabs = [
     { id: 'web', label: 'Web' },
     { id: 'hopes', label: 'Hopes' },
     { id: 'videography', label: 'Videography' },
+    { id: 'interview', label: 'Interview' },
 ];
-
 
 export const worksData = [
     {
         id: 1,
         imageUrl: '/img1.jpg',
-        heading: 'A purrfect immersize experience for the felines and friends of POTT',
+        heading:
+            'Highlighting urban redevelopment ni VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
-        clubs: ['VERSELE LAGA'],
-    categories: ['all', 'picture', 'hopes', 'web']
+        clubs: ['VERSELE LAGA', 'nexus'],
+        categories: ['all', 'picture', 'hopes', 'web'],
     },
     {
         id: 2,
         imageUrl: '/img2.jpg',
-        heading: 'A purrfect immersize experience for the felines and friends of POTT',
+        heading:
+            'A purrfect immersize experience for the felines and friends of POTT',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
-        categories: ['all','web', 'science']
+        categories: ['all', 'web', 'science'],
     },
     {
         id: 3,
         imageUrl: '/img1.jpg',
-        heading: 'A purrfect immersize experience for the felines and friends of POTT',
+        heading:
+            'Building a community',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
-        categories: ['all', 'videography']
+        categories: ['all', 'videography'],
     },
     {
         id: 4,
         imageUrl: '/img2.jpg',
-        heading: 'A purrfect immersize experience for the felines and friends of POTT',
+        heading:
+            'Spreading its virtual wings',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
-        categories: ['all', 'picture']
+        categories: ['all', 'picture'],
     },
     {
         id: 5,
         imageUrl: '/img1.jpg',
-        heading: 'A purrfect immersize experience for the felines and friends of POTT',
+        heading:
+            'Building brand loyality through online design tool',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
-        categories: ['all','web', 'hopes']
+        categories: ['all', 'web', 'hopes'],
     },
     {
         id: 6,
         imageUrl: '/img2.jpg',
-        heading: 'A purrfect immersize experience for the felines and friends of POTT',
+        heading:
+            'Revolutionizing safety training in the workplace with VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
-        categories: ['all','photo', 'videography']
-    }
-]
+        categories: ['all', 'photo', 'videography'],
+    },
+];

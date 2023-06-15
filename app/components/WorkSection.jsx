@@ -20,11 +20,11 @@ const WorkSection = () => {
 
     return (
         <div>
-            <section className='my-5 flex items-center justify-center'>
+            <section className='my-5 flex items-center justify-center '>
                 <Subnavbar setLabel={setLabel} label={label} />
             </section>
 
-            <motion.div layout className='flex items-center justify-center flex-wrap'>
+            <motion.div layout className='flex items-start justify-center flex-wrap'>
                 {workData.map((data) => (
                     <WorkCard
                         id={data.id}

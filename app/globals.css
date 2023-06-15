@@ -66,9 +66,13 @@ body {
 
 
 .text-gradient {
-  margin-inline: 5px;
-  background-color: #6c5b7b;
-  background-image: linear-gradient(45deg, #f67280, #6c5b7b);
+  background-color: #ff2426;
+  background-image: linear-gradient(45deg,
+      rgb(184, 26, 27),
+      rgb(219, 36, 38),
+      rgb(255, 78, 79),
+      rgb(255, 106, 107),
+    );
   background-clip: text;
   background-size: 100%;
   -webkit-background-clip: text;
@@ -110,6 +114,20 @@ body {
   -moz-backdrop-filter: blur(20px);
 }
 
-.workimage:hover{
+.workimage:hover {
   background-color: red;
+}
+
+.no-x-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* Disable scrollbar IE 10+ */
+  overflow-y: scroll;
+}
+
+.no-x-scroll::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+  /* Disable scrollbar Chrome/Safari/Webkit */
 }

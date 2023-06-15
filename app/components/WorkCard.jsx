@@ -10,33 +10,35 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 exit={{ opacity: 0, duration: 1 }}
-                className='m-5 flex max-w-[500px] flex-col items-center justify-center gap-y-2'
+                className='m-5 flex max-w-[400px] flex-col items-center justify-start gap-y-2'
             >
                 <Suspense fallback={<p>loading..</p>}>
-                    <motion.img
-                        layout
+                    <Image
+                        // layout
                         // style={{ objectFit: "contain" }}
                         // placeholder='blur'
                         loading='lazy'
-                        className='workimage mx-5 h-full w-full overflow-hidden rounded-lg bg-orange-100 object-cover'
+                        className='workimage mx-5 h-full w-full overflow-hidden rounded-lg md:rounded-xl bg-orange-100 object-cover'
                         src={imageUrl}
                         height={300}
-                        width={480}
+                        width={400}
                         alt={`${heading} thumbnail`}
                     />
                 </Suspense>
-                <motion.div layout className='flex flex-col gap-y-2 p-3'>
-                    <h1 className='text-xl sm:text-2xl'>{heading}</h1>
+                <motion.div layout className='flex flex-col gap-y-2 p-3 justify-start'>
+                    <h1 className='line-clamp-2 text-lg sm:text-2xl'>{heading}</h1>
                     {/* <p>{desc}</p> */}
-                    {clubs.map((club) => (
-                        <span className='font-extrabold' key={worksData[0].id}>
-                            {club}
-                        </span>
-                    ))}
+                    <div className='flex gap-x-4'>
+                        {clubs.map((club) => (
+                            <span className='mx-0 font-extrabold text-gradient uppercase' key={worksData[0].id}>
+                                {club}
+                            </span>
+                        ))}
+                    </div>
                     <div className='flex gap-x-4'>
                         {categories.map((category) => (
                             <span
-                                className='text-xs sm:text-sm rounded-md font-semibold uppercase text-primary-700'
+                                className='text-xs sm:text-sm tracking-wide rounded-md font-semibold uppercase text-primary-700'
                                 key={worksData.id}
                             >
                                 {category}

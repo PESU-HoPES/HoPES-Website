@@ -16,13 +16,13 @@ export default function Subnavbar({ label, setLabel }) {
 
     return (
 
-        <div className="relative flex space-x-1 mt-[3vmin] mb-[2vmin]">
+        <div className="w-screen overflow-x-auto px-8 no-x-scroll relative flex space-x-1 mt-[3vmin] mb-[2vmin] ss:justify-center">
             {filterTabs.map((tab) => (
                 <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
                     className={`${activeTab === tab.id ? "" : "hover:text-white"
-                        } font-poppins relative rounded-full px-3 py-1.5 text-xs sm:text-sm font-medium text-white outline-sky-400 transition focus-visible:outline-2`}
+                        } font-poppins relative rounded-full px-3 py-1.5 text-xs sm:text-sm font-medium text-white transition focus-visible:outline-2`}
                 >
                     {activeTab === tab.id && (
                         <motion.span
