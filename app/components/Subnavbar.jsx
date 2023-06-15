@@ -1,23 +1,21 @@
 'use client'
 
-import { motion, useMotionValue, useMotionTemplate } from "framer-motion";
+import { filterTabs } from "@/constants";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-let tabs = [
-    { id: "world", label: "World" },
-    { id: "ny", label: "N.Y." },
-    { id: "business", label: "Business" },
-    { id: "arts", label: "Arts" },
-    { id: "science", label: "Science" },
-];
 
 
-export default function Subnavbar() {
-    let [activeTab, setActiveTab] = useState(tabs[0].id);
+
+export default function Subnavbar({ label, setLabel }) {
+    let [activeTab, setActiveTab] = useState(filterTabs[0].id);
+    useEffect(() => {
+        setLabel(activeTab)
+    }, [activeTab])
 
     return (
         <div className="relative flex space-x-1">
-            {tabs.map((tab) => (
+            {filterTabs.map((tab) => (
                 <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}

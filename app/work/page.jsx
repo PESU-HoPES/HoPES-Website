@@ -1,7 +1,7 @@
 import Button from '@/app/components/Button'
 import React from 'react'
 import TextAnimation from '../components/TextAnimation'
-import Subnavbar from '../components/Subnavbar'
+import WorkSection from '../components/WorkSection'
 
 const WorkPage = () => {
   return (
@@ -18,10 +18,8 @@ const WorkPage = () => {
           </TextAnimation>
         </div>
       </div>
-      <section className='flex justify-center items-center my-5'>
 
-        <Subnavbar />
-      </section>
+      <WorkSection />
     </>
   )
 }

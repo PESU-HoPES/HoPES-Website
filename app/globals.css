@@ -109,3 +109,7 @@ body {
   -webkit-backdrop-filter: blur(20px);
   -moz-backdrop-filter: blur(20px);
 }
+
+.workimage:hover{
+  background-color: red;
+}
