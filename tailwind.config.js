@@ -29,6 +29,9 @@ module.exports = {
         nunito: ['Nunito Sans', 'sans-serif'],
         opensans: ['Open Sans', 'sans-serif'],
       },
+      gridTemplateColumns:{
+        'work': 'repeat( minmax(150px, 1fr))',
+      },
       boxShadow: {
         'custom-xs': 'rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px',
         'custom-sm': 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px',

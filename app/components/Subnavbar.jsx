@@ -8,20 +8,21 @@ import { useEffect, useState } from "react";
 
 
 export default function Subnavbar({ label, setLabel }) {
-    let [activeTab, setActiveTab] = useState(filterTabs[0].id);
+    const [activeTab, setActiveTab] = useState(filterTabs[0].id);
+    
     useEffect(() => {
         setLabel(activeTab)
     }, [activeTab])
 
     return (
 
-        <div className="relative flex space-x-1">
+        <div className="relative flex space-x-1 mt-[3vmin] mb-[2vmin]">
             {filterTabs.map((tab) => (
                 <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
                     className={`${activeTab === tab.id ? "" : "hover:text-white"
-                        } font-poppins relative rounded-full px-3 py-1.5 text-sm font-medium text-white outline-sky-400 transition focus-visible:outline-2`}
+                        } font-poppins relative rounded-full px-3 py-1.5 text-xs sm:text-sm font-medium text-white outline-sky-400 transition focus-visible:outline-2`}
                 >
                     {activeTab === tab.id && (
                         <motion.span

@@ -10,6 +10,7 @@ const WorkSection = () => {
     const [label, setLabel] = useState('all');
     const [workData, setWorkData] = useState(worksData);
 
+
     useEffect(() => {
         let filterWorkData = worksData.filter((data) =>
             data.categories.includes(label)
