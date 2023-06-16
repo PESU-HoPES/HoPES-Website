@@ -26,7 +26,7 @@ const Button = ({ children, type = 'default', wide = false }) => {
                     className={`block h-9 overflow-hidden`}
                     aria-hidden
                 >
-                    {children.split('').map((letter, index) => (
+                    {children.replace('', '\u00a0').split('').map((letter, index) => (
                         <span
                             data-letter={letter}
                             className={`font-bold text-base letter relative inline-block h-9 leading-9 after:absolute after:left-0 after:top-full after:h-8 after:content-[attr(data-letter)]`}

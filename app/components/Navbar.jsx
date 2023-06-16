@@ -152,10 +152,11 @@ export const MenuToggle = ({ toggle }) => {
         <div className='flex items-center justify-center gap-x-5'>
             {currentRoute === '/' && (
                 <Link href='/work'>
-                    <Button wide={true}>Works</Button>
+                    <Button wide={true}>Get&nbsp;started</Button>
                 </Link>
             )}
-            <button
+            <button 
+            aria-label='navigation ham'
                 className='z-50 flex h-[50px] w-[50px] items-center justify-center rounded-full bg-primary-600 p-[10px]'
                 onClick={toggle}
             >

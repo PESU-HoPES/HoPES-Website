@@ -29,7 +29,7 @@ const TextAnimation = ({ children, size = 'default' }) => {
             animate='show'
         >
             <span className={`${size === 'larger' ? 'my-5' : size === 'large' ? '' : ''} relative whitespace-nowrap`} ref={scope} onClick={animateText}>
-                {children.split('').map((c, index) => (
+                {children.replace(' ', '\u00a0').split('').map((c, index) => (
                     <motion.span
                         initial={{
                             opacity: 0,

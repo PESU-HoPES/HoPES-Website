@@ -9,7 +9,7 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
     const isInView = useInView(ref, { once: true });
 
     return (
-        <AnimatePresence>
+        // <AnimatePresence>
             <motion.div
                 ref={ref}
                 animate={{ opacity: 1 }}
@@ -20,7 +20,7 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                 <motion.div
                     layout
                     style={{
-                        transform: isInView ? 'none' : 'translateY(200px)',
+                        transform: isInView ? 'none' : 'translateY(50px)',
                         opacity: isInView ? 1 : 0,
                         transition:
                             'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
@@ -87,7 +87,7 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                 </motion.div>
                 <motion.div
                     style={{
-                        transform: isInView ? 'none' : 'translateY(100px)',
+                        transform: isInView ? 'none' : 'translateY(20px)',
                         opacity: isInView ? 1 : 0,
                         transition:
                             'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
@@ -99,6 +99,7 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                         <h1 className='line-clamp-2 text-lg sm:text-2xl'>
                             {heading}
                         </h1>
+                        
                         {/* <TextAnimation>{heading}</TextAnimation> */}
                         {/* <p>{desc}</p> */}
                         <div className='flex gap-x-4'>
@@ -124,7 +125,7 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                     </div>
                 </motion.div>
             </motion.div>
-        </AnimatePresence>
+        // </AnimatePresence>
     );
 };
 
