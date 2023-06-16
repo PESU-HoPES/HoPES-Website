@@ -16,7 +16,7 @@ const WorkSection = () => {
             data.categories.includes(label)
         );
         setWorkData(filterWorkData);
-    }, [workData, label]);
+    }, [label]);
 
     return (
         <div>
