@@ -2,6 +2,7 @@ import { instagram } from '@/public/assets/importing';
 import { AnimatePresence, motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 import React, { Suspense, useRef } from 'react';
+import TextAnimation from './TextAnimation';
 
 
 const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
@@ -16,7 +17,7 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 exit={{ opacity: 0, duration: 1 }}
-                className='m-5 flex md:max-w-[450px] max-w-[300px] flex-col items-start justify-start gap-y-2'
+                className='m-5 flex w-[400px] flex-col items-center justify-start gap-y-2'
             >
                 <motion.div
                     layout
@@ -29,9 +30,9 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                 >
                     <Suspense fallback={<p>loading..</p>}>
                         <Image
-                            style={{ objectFit: "cover" }}
+                            style={{ objectFit: "fill" }}
                             loading='lazy'
-                            className='-z-10 workimage overflow-hidden rounded-lg md:rounded-xl bg-orange-100 object-cover'
+                            className='-z-10 workimage overflow-hidden rounded-lg md:rounded-xl bg-orange-100'
                             src={imageUrl}
                             height={400}
                             width={300}
@@ -39,16 +40,16 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                         />
                     </Suspense>
                     <div
-                        className='absolute top-0 right-0 bg-red-400 p-2 flex flex-col items-center gap-y-3 rounded-md m-1'
+                        className='workcardlinks absolute top-0 right-0 p-2 flex flex-col items-center gap-y-3 rounded-md m-1'
                     >
-                        {/* <Image
+                        <Image
                                 height={20}
                                 width={20}
                                 src={instagram}
                                 alt='instagram thumbnail'
                                 className=''
                             />
-                            <Image
+                            {/* <Image
                                 height={20}
                                 width={20}
                                 src='/../public/assets/images/icons/instagram.svg'
@@ -63,8 +64,10 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                         opacity: isInView ? 1 : 0,
                         transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                     }}
-                    layout className='space-y-2 p-3'>
+                    layout className='flex items-start flex-col'>
+
                     <h1 className='line-clamp-2 text-lg sm:text-2xl'>{heading}</h1>
+                    {/* <TextAnimation>{heading}</TextAnimation> */}
                     {/* <p>{desc}</p> */}
                     <div className='flex gap-x-4'>
                         {clubs.map((club) => (

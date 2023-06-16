@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Subnavbar from './Subnavbar';
 import WorkCard from './WorkCard';
 import { worksData } from '@/public/constants';
-import { motion } from 'framer-motion';
+import { LayoutGroup, motion } from 'framer-motion';
 
 
 const WorkSection = () => {
@@ -29,6 +29,8 @@ const WorkSection = () => {
                 className='grid grid-cols-autofit bg-orange-400'
             > */}
             <motion.div layout className='flex items-center justify-center flex-wrap'>
+                <LayoutGroup>
+
                 {workData.map((data) => (
                     <WorkCard
                         id={data.id}
@@ -40,6 +42,7 @@ const WorkSection = () => {
                         categories={data.categories.slice(1)}
                     />
                 ))}
+                </LayoutGroup>
             </motion.div>
         </div>
     );
