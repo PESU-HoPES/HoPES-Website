@@ -24,24 +24,20 @@ const WorkSection = () => {
                 <Subnavbar setLabel={setLabel} label={label} />
             </section>
 
-            {/* <motion.div
-                layout
-                className='grid grid-cols-autofit bg-orange-400'
-            > */}
-            <motion.div layout className='flex items-center justify-center flex-wrap'>
-                <LayoutGroup>
 
-                {workData.map((data) => (
-                    <WorkCard
-                        id={data.id}
-                        key={data.id}
-                        heading={data.heading}
-                        desc={data.desc}
-                        imageUrl={data.imageUrl}
-                        clubs={data.clubs}
-                        categories={data.categories.slice(1)}
-                    />
-                ))}
+            <motion.div layout className='flex items-start justify-center flex-wrap gap-4'>
+                <LayoutGroup>
+                    {workData.map((data) => (
+                        <WorkCard
+                            id={data.id}
+                            key={data.id}
+                            heading={data.heading}
+                            desc={data.desc}
+                            imageUrl={data.imageUrl}
+                            clubs={data.clubs}
+                            categories={data.categories.slice(1)}
+                        />
+                    ))}
                 </LayoutGroup>
             </motion.div>
         </div>

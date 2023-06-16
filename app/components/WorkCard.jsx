@@ -30,32 +30,32 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                 >
                     <Suspense fallback={<p>loading..</p>}>
                         <Image
-                            style={{ objectFit: "fill" }}
+                            // style={{ objectFit: "fill" }}
                             loading='lazy'
-                            className='-z-10 workimage overflow-hidden rounded-lg md:rounded-xl bg-orange-100'
+                            className='-z-10 aspect-4/5 object-cover workimage overflow-hidden rounded-lg bg-orange-100'
                             src={imageUrl}
-                            height={400}
-                            width={300}
+                            height={500}
+                            width={400}
                             alt={`${heading} thumbnail`}
                         />
                     </Suspense>
                     <div
-                        className='workcardlinks absolute top-0 right-0 p-2 flex flex-col items-center gap-y-3 rounded-md m-1'
+                        className='workcardlinks absolute top-0 right-0 p-2 flex flex-col items-center gap-y-3 rounded-lg m-1'
                     >
                         <Image
-                                height={20}
-                                width={20}
-                                src={instagram}
-                                alt='instagram thumbnail'
-                                className=''
-                            />
-                            {/* <Image
-                                height={20}
-                                width={20}
-                                src='/../public/assets/images/icons/instagram.svg'
-                                alt='instagram thumbnail'
-                                className=''
-                            /> */}
+                            height={20}
+                            width={20}
+                            src={instagram}
+                            alt='instagram thumbnail'
+                            className=''
+                        />
+                        <Image
+                            height={20}
+                            width={20}
+                            src={instagram}
+                            alt='instagram thumbnail'
+                            className=''
+                        />
                     </div>
                 </motion.div>
                 <motion.div
@@ -64,29 +64,33 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                         opacity: isInView ? 1 : 0,
                         transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                     }}
-                    layout className='flex items-start flex-col'>
+                    layout className='w-full'>
 
-                    <h1 className='line-clamp-2 text-lg sm:text-2xl'>{heading}</h1>
-                    {/* <TextAnimation>{heading}</TextAnimation> */}
-                    {/* <p>{desc}</p> */}
-                    <div className='flex gap-x-4'>
-                        {clubs.map((club) => (
-                            <span
-                                className='mx-0 font-extrabold text-gradient uppercase'
-                                key={id}>
-                                {club}
-                            </span>
-                        ))}
-                    </div>
-                    <div className='flex gap-x-4'>
-                        {categories.map((category) => (
-                            <span
-                                className='text-xs sm:text-sm tracking-wide rounded-md font-semibold uppercase text-primary-700'
-                                key={id}
-                            >
-                                {category}
-                            </span>
-                        ))}
+                    <div className='flex items-start flex-col justify-center px-3'>
+
+
+                        <h1 className='line-clamp-2 text-lg sm:text-2xl'>{heading}</h1>
+                        {/* <TextAnimation>{heading}</TextAnimation> */}
+                        {/* <p>{desc}</p> */}
+                        <div className='flex gap-x-4'>
+                            {clubs.map((club) => (
+                                <span
+                                    className='mx-0 font-extrabold text-gradient uppercase'
+                                    key={id}>
+                                    {club}
+                                </span>
+                            ))}
+                        </div>
+                        <div className='flex gap-x-4'>
+                            {categories.map((category) => (
+                                <span
+                                    className='text-xs sm:text-sm tracking-wide rounded-md font-semibold uppercase text-primary-700'
+                                    key={id}
+                                >
+                                    {category}
+                                </span>
+                            ))}
+                        </div>
                     </div>
                 </motion.div>
             </motion.div>

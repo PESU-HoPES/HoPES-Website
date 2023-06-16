@@ -14,33 +14,33 @@ function useMenuAnimation(isOpen) {
     useEffect(() => {
         const menuAnimations = isOpen
             ? [
-                [
-                    'nav',
-                    { transform: 'translateX(0%)' },
-                    { ease: [0.08, 0.65, 0.53, 0.96], duration: 0.6 },
-                ],
-                [
-                    '.word',
-                    {
-                        transform: 'scale(1)',
-                        opacity: 1,
-                        filter: 'blur(0px)',
-                    },
-                    { delay: stagger(0.03), at: '>' },
-                ],
-            ]
+                  [
+                      'nav',
+                      { transform: 'translateX(0%)' },
+                      { ease: [0.08, 0.65, 0.53, 0.96], duration: 0.6 },
+                  ],
+                  [
+                      '.word',
+                      {
+                          transform: 'scale(1)',
+                          opacity: 1,
+                          filter: 'blur(0px)',
+                      },
+                      { delay: stagger(0.03), at: '>' },
+                  ],
+              ]
             : [
-                [
-                    '.word',
-                    {
-                        transform: 'scale(0.2)',
-                        opacity: 0,
-                        filter: 'blur(5px)',
-                    },
-                    { delay: stagger(0.03, { from: 'last' }), at: '<' },
-                ],
-                ['nav', { transform: 'translateX(100%)' }, { at: '-0.1' }],
-            ];
+                  [
+                      '.word',
+                      {
+                          transform: 'scale(0.2)',
+                          opacity: 0,
+                          filter: 'blur(5px)',
+                      },
+                      { delay: stagger(0.03, { from: 'last' }), at: '<' },
+                  ],
+                  ['nav', { transform: 'translateX(100%)' }, { at: '-0.1' }],
+              ];
 
         animate([
             [
@@ -72,40 +72,53 @@ export default function Navbar() {
 
     return (
         <div ref={scope} className='z-50 overflow-scroll'>
-            <nav className='fixed right-0 top-0 z-50 w-full min-h-[100dvh] translate-x-full transform bg-primary-700 pt-[100px]'>
-                <div className='min-h-full flex flex-col-reverse sm:flex-row items-start sm:items-end px-10 sm:px-20 sm:justify-between justify-start h-full gap-x-3 gap-y-12'>
-                    <div className='flex-grow font-medium flex flex-col gap-y-5'>
-                        <p className='tracking-[0.1rem] text-sm'>GET IN TOUCH</p>
-                        <div className="text-3xl sm:text-4xl space-y-1">
-                            <a href='hopes-website.vercel.app' className='block'>
-                                <motion.h1 className='hover-underline-animation'>hopes.vercel.app</motion.h1>
+            <nav className='fixed right-0 top-0 z-50 min-h-[100dvh] w-full translate-x-full transform bg-primary-700 pt-[100px]'>
+                <div className='flex h-full min-h-full flex-col-reverse items-start justify-start gap-x-3 gap-y-12 px-10 sm:flex-row sm:items-end sm:justify-between sm:px-20'>
+                    <div className='flex flex-grow flex-col gap-y-5 font-medium'>
+                        <p className='text-sm tracking-[0.1rem]'>
+                            GET IN TOUCH
+                        </p>
+                        <div className='space-y-1 text-3xl sm:text-4xl'>
+                            <a
+                                href='hopes-website.vercel.app'
+                                className='block'
+                            >
+                                <motion.h1 className='hover-underline-animation'>
+                                    hopes.vercel.app
+                                </motion.h1>
                             </a>
                             <Link href='/' className='block'>
-                                <motion.h1 className='hover-underline-animation'>sarang@gmail.com</motion.h1>
+                                <motion.h1 className='hover-underline-animation'>
+                                    sarang@gmail.com
+                                </motion.h1>
                             </Link>
                             <Link href='/' className='block'>
-                                <motion.h1 className='hover-underline-animation'>website url</motion.h1>
+                                <motion.h1 className='hover-underline-animation'>
+                                    website url
+                                </motion.h1>
                             </Link>
                         </div>
                     </div>
-                    <ul className='flex flex-col flex-grow'>
+                    <ul className='flex flex-grow flex-col'>
                         {navlinks.map((navlink) => (
                             <motion.li
                                 key={navlink.id}
                                 layout
-                                className='inline-block -my-2 md:-my-4'
-                                whileHover={{ x: 50, scale: 1.1, letterSpacing: '5px' }}
+                                className='-my-2 inline-block md:-my-4'
+                                whileHover={{
+                                    x: 50,
+                                    scale: 1.1,
+                                    letterSpacing: '5px',
+                                }}
                             >
                                 {navlink.title.split('').map((c, index) => (
                                     <Link
                                         key={index}
                                         onClick={() => setIsOpen(!isOpen)}
                                         href={navlink.href}
-                                        className="w-full"
+                                        className='w-full'
                                     >
-                                        <span
-                                            className='word inline-block md:text-[5rem] sm:text-[4rem] text-[3.5rem] font-extrabold '
-                                        >
+                                        <span className='word inline-block text-[3.5rem] font-extrabold sm:text-[4rem] md:text-[5rem] '>
                                             {c}
                                         </span>
                                     </Link>
@@ -137,11 +150,11 @@ export const MenuToggle = ({ toggle }) => {
     const currentRoute = usePathname();
     return (
         <div className='flex items-center justify-center gap-x-5'>
-            {currentRoute === '/' &&
+            {currentRoute === '/' && (
                 <Link href='/work'>
                     <Button wide={true}>Works</Button>
                 </Link>
-            }
+            )}
             <button
                 className='z-50 flex h-[50px] w-[50px] items-center justify-center rounded-full bg-primary-600 p-[10px]'
                 onClick={toggle}
@@ -155,7 +168,11 @@ export const MenuToggle = ({ toggle }) => {
                             open: { d: 'M 3 16.5 L 17 2.5' },
                         }}
                     />
-                    <Path d='M 2 9.423 L 20 9.423' opacity='1' className='middle' />
+                    <Path
+                        d='M 2 9.423 L 20 9.423'
+                        opacity='1'
+                        className='middle'
+                    />
                     <Path
                         d='M 2 16.346 L 20 16.346'
                         className='bottom'
@@ -168,4 +185,4 @@ export const MenuToggle = ({ toggle }) => {
             </button>
         </div>
     );
-}
+};

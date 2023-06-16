@@ -39,6 +39,11 @@ module.exports = {
         'custom-lg': 'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px',
         'custom-hover': 'rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em',
       },
+      aspectRatio: {
+        '4/3': '4 / 3',
+        '2/3': '2 / 3',
+        '4/5': '4 / 5',
+      }
     },
     screens: {
       'xs': '480px',
