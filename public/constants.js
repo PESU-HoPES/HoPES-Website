@@ -48,7 +48,7 @@ export const filterTabs = [
 export const worksData = [
     {
         id: 1,
-        imageUrl: '/../public/assets/images/work/img1.jpg',
+        imageUrl: 'https://images.pexels.com/photos/16848567/pexels-photo-16848567/free-photo-of-el-pozo-de-las-almas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'Highlighting urban redevelopment ni VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA', 'nexus'],
@@ -56,7 +56,7 @@ export const worksData = [
     },
     {
         id: 2,
-        imageUrl: '/../public/assets/images/work/img2.jpg',
+        imageUrl: 'https://images.pexels.com/photos/16931198/pexels-photo-16931198/free-photo-of-chateau-d-eltz-en-allemagne-au-millieux-de-la-foret.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'A purrfect immersize experience for the felines and friends of POTT',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
@@ -64,7 +64,7 @@ export const worksData = [
     },
     {
         id: 3,
-        imageUrl: '/../public/assets/images/work/img3.jpg',
+        imageUrl: 'https://images.pexels.com/photos/16158164/pexels-photo-16158164/free-photo-of-nature-fashion-sunglasses-people.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'Building a community',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
@@ -72,7 +72,7 @@ export const worksData = [
     },
     {
         id: 4,
-        imageUrl: '/../public/assets/images/work/img4.jpg',
+        imageUrl: 'https://images.pexels.com/photos/16614531/pexels-photo-16614531/free-photo-of-wood-art-painting-luxury.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'Spreading its virtual wings',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
@@ -80,7 +80,7 @@ export const worksData = [
     },
     {
         id: 5,
-        imageUrl: '/../public/assets/images/work/img5.jpg',
+        imageUrl: '/assets/images/work/img5.jpg',
         heading: 'Building brand loyality through online design tool',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
@@ -88,7 +88,7 @@ export const worksData = [
     },
     {
         id: 6,
-        imageUrl: '/../public/assets/images/work/img6.jpg',
+        imageUrl: 'https://images.pexels.com/photos/13649986/pexels-photo-13649986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'Revolutionizing safety training in the workplace with VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
@@ -96,7 +96,7 @@ export const worksData = [
     },
     {
         id: 7,
-        imageUrl: '/../public/assets/images/work/img1.jpg',
+        imageUrl: 'https://images.pexels.com/photos/16154507/pexels-photo-16154507/free-photo-of-man-people-woman-art.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'Highlighting urban redevelopment ni VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA', 'nexus'],
@@ -104,7 +104,7 @@ export const worksData = [
     },
     {
         id: 8,
-        imageUrl: '/../public/assets/images/work/img2.jpg',
+        imageUrl: 'https://images.pexels.com/photos/6416960/pexels-photo-6416960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'A purrfect immersize experience for the felines and friends of POTT',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
@@ -112,7 +112,7 @@ export const worksData = [
     },
     {
         id: 9,
-        imageUrl: '/../public/assets/images/work/img3.jpg',
+        imageUrl: 'https://images.pexels.com/photos/4946520/pexels-photo-4946520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'Building a community',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
@@ -120,7 +120,7 @@ export const worksData = [
     },
     {
         id: 10,
-        imageUrl: '/../public/assets/images/work/img4.jpg',
+        imageUrl: 'https://images.pexels.com/photos/11622457/pexels-photo-11622457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'Spreading its virtual wings',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
@@ -128,7 +128,7 @@ export const worksData = [
     },
     {
         id: 11,
-        imageUrl: '/../public/assets/images/work/img5.jpg',
+        imageUrl: 'https://images.pexels.com/photos/17202898/pexels-photo-17202898/free-photo-of-city-street-building-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'Building brand loyality through online design tool',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
@@ -136,7 +136,7 @@ export const worksData = [
     },
     {
         id: 12,
-        imageUrl: '/../public/assets/images/work/img6.jpg',
+        imageUrl: 'https://images.pexels.com/photos/17223590/pexels-photo-17223590/free-photo-of-reflection-of-life-hayatin-yansimasi.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'Revolutionizing safety training in the workplace with VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
