@@ -4,11 +4,9 @@ import Image from 'next/image';
 import React, { Suspense, useRef } from 'react';
 import TextAnimation from './TextAnimation';
 
-
 const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: false });
-
+    const isInView = useInView(ref, { once: true });
 
     return (
         <AnimatePresence>
@@ -17,31 +15,55 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 exit={{ opacity: 0, duration: 1 }}
-                className='m-5 flex w-[400px] flex-col items-center justify-start gap-y-2'
+                className='m-5 flex w-[320px] flex-col items-center justify-start gap-y-2'
             >
                 <motion.div
                     layout
                     style={{
-                        transform: isInView ? "none" : "translateY(200px)",
+                        transform: isInView ? 'none' : 'translateY(200px)',
                         opacity: isInView ? 1 : 0,
-                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                        transition:
+                            'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
                     }}
-                    className={`relative workimage `}
+                    className={`workimage relative `}
                 >
-                    <Suspense fallback={<p>loading..</p>}>
+                    <Suspense fallback={
+                        <div className='w-[320px] h-[400px] rounded-lg flex justify-center items-center border-[1px]'>
+                            <svg
+                                className='h-5 w-5 animate-spin text-white'
+                                xmlns='http://www.w3.org/2000/svg'
+                                fill='none'
+                                viewBox='0 0 24 24'
+                            >
+                                <circle
+                                    className='opacity-25'
+                                    cx='12'
+                                    cy='12'
+                                    r='10'
+                                    stroke='currentColor'
+                                    strokeWidth={4}
+                                >
+                                    {' '}
+                                </circle>
+                                <path
+                                    className='opacity-75'
+                                    fill='currentColor'
+                                    d='M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'
+                                ></path>
+                            </svg>
+                        </div>
+                    }>
                         <Image
                             // style={{ objectFit: "fill" }}
                             loading='lazy'
-                            className='-z-10 aspect-4/5 object-cover workimage overflow-hidden rounded-lg bg-orange-100'
+                            className='workimage -z-10 aspect-4/5 overflow-hidden rounded-lg bg-orange-100 object-cover'
                             src={imageUrl}
-                            height={500}
-                            width={400}
+                            height={400}
+                            width={320}
                             alt={`${heading} thumbnail`}
                         />
                     </Suspense>
-                    <div
-                        className='workcardlinks absolute top-0 right-0 p-2 flex flex-col items-center gap-y-3 rounded-lg m-1'
-                    >
+                    <div className='workcardlinks absolute right-0 top-0 m-1 flex flex-col items-center gap-y-3 rounded-lg p-2'>
                         <Image
                             height={20}
                             width={20}
@@ -60,23 +82,26 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                 </motion.div>
                 <motion.div
                     style={{
-                        transform: isInView ? "none" : "translateY(100px)",
+                        transform: isInView ? 'none' : 'translateY(100px)',
                         opacity: isInView ? 1 : 0,
-                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                        transition:
+                            'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
                     }}
-                    layout className='w-full'>
-
-                    <div className='flex items-start flex-col justify-center px-3'>
-
-
-                        <h1 className='line-clamp-2 text-lg sm:text-2xl'>{heading}</h1>
+                    layout
+                    className='w-full'
+                >
+                    <div className='flex flex-col items-start justify-center px-3'>
+                        <h1 className='line-clamp-2 text-lg sm:text-2xl'>
+                            {heading}
+                        </h1>
                         {/* <TextAnimation>{heading}</TextAnimation> */}
                         {/* <p>{desc}</p> */}
                         <div className='flex gap-x-4'>
                             {clubs.map((club) => (
                                 <span
-                                    className='mx-0 font-extrabold text-gradient uppercase'
-                                    key={id}>
+                                    className='text-gradient mx-0 font-extrabold uppercase'
+                                    key={id}
+                                >
                                     {club}
                                 </span>
                             ))}
@@ -84,7 +109,7 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                         <div className='flex gap-x-4'>
                             {categories.map((category) => (
                                 <span
-                                    className='text-xs sm:text-sm tracking-wide rounded-md font-semibold uppercase text-primary-700'
+                                    className='rounded-md text-xs font-semibold uppercase tracking-wide text-primary-700 sm:text-sm'
                                     key={id}
                                 >
                                     {category}
