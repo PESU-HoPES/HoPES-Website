@@ -53,6 +53,7 @@ module.exports = {
       'lg': '1204px',
       'xl': '1280px',
       '2xl': '1536px',
+      '3xl': '1640px',
     },
   },
   plugins: [],

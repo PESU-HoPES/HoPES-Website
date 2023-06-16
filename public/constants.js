@@ -144,7 +144,7 @@ export const worksData = [
     },
     {
         id: 13,
-        imageUrl: '/img13.jpg',
+        imageUrl: '/assets/images/work/img13.jpg',
         heading: 'Revolutionizing safety training in the workplace with VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
