@@ -21,7 +21,7 @@ export const navlinks = [
     },
     {
         id: 4,
-        title: 'Colaboration',
+        title: 'Colabs',
         href: 'colaboration',
     },
     // {
@@ -53,7 +53,7 @@ export const filterRoles = [
     { id: 'crew', label: 'Crew' },
     { id: 'operations', label: 'Opeations' },
     { id: 'content writing', label: 'Content Writing' },
-    { id: 'Design', label: 'Design' },
+    { id: 'design', label: 'Design' },
     { id: 'logistics', label: 'Logistics' },
     { id: 'evm', label: 'EVM' },
 ]
@@ -168,7 +168,7 @@ export const worksData = [
 export const teamDetails = [
     {
         id: 1,
-        name: 'Sarang Kumar',
+        name: 'Siddharth',
         domain: 'Head',
         role: 'Club Head',
         desc: 'something something',
@@ -177,7 +177,7 @@ export const teamDetails = [
             thumbnail: '/assets/images/avatar/thumbnail/bear.png',
             large: '',
         },
-        categories: ['all', 'head', 'evm'],
+        categories: ['all', 'head'],
     },
     {
         id: 2,
@@ -194,7 +194,46 @@ export const teamDetails = [
     },
     {
         id: 3,
-        name: 'Sarang Kumar',
+        name: 'Sai H Narra',
+        domain: 'EVM',
+        role: 'Domain Head',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            large: '',
+        },
+        categories: ['all', 'domain head', 'evm',]
+    },
+    {
+        id: 4,
+        name: 'Nandan',
+        domain: 'Content Writing',
+        role: 'Crew',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/bear.png',
+            large: '',
+        },
+        categories: ['all', 'crew', 'content writing',]
+    },
+    {
+        id: 5,
+        name: 'Nupur',
+        domain: 'Design',
+        role: 'Crew',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/lion.png',
+            large: '',
+        },
+        categories: ['all', 'crew', 'design',]
+    },
+    {
+        id: 6,
+        name: 'Jack',
         domain: 'EVM',
         role: 'Crew',
         desc: 'something something',
@@ -206,36 +245,75 @@ export const teamDetails = [
         categories: ['all', 'crew', 'evm',]
     },
     {
-        id: 4,
-        name: 'Sarang Kumar',
-        domain: 'Head',
-        role: 'Club Head',
+        id: 7,
+        name: 'Prashant',
+        domain: 'Logistics',
+        role: 'Crew',
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/bear.png',
             large: '',
         },
-        categories: ['all', 'crew', 'design',]
+        categories: ['all', 'crew', 'logistics',]
     },
     {
-        id: 5,
-        name: 'Sarang Kumar',
-        domain: 'Web Development',
-        role: 'Domain Head',
+        id: 8,
+        name: 'Puneet',
+        domain: 'Operations',
+        role: 'crew',
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/lion.png',
             large: '',
         },
-        categories: ['all', 'domain head', 'design',]
+        categories: ['all', 'crew', 'operations',]
     },
     {
-        id: 6,
-        name: 'Sarang Kumar',
-        domain: 'EVM',
+        id: 9,
+        name: 'Shreya',
+        domain: 'Logistics',
         role: 'Crew',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            large: '',
+        },
+        categories: ['all', 'crew', 'logistics',]
+    },
+    {
+        id: 10,
+        name: 'Divya',
+        domain: 'Content Writing',
+        role: 'Crew',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            large: '',
+        },
+        categories: ['all', 'crew', 'content writing',]
+    },
+    {
+        id: 11,
+        name: 'Dinesh',
+        domain: 'Content Writing',
+        role: 'Domain Head',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            large: '',
+        },
+        categories: ['all', 'domain head', 'content writing',]
+    },
+    {
+        id: 12,
+        name: 'Ashwerya',
+        domain: 'Operations',
+        role: 'Domain Head',
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
@@ -245,55 +323,16 @@ export const teamDetails = [
         categories: ['all', 'domain head', 'operations',]
     },
     {
-        id: 7,
-        name: 'Sarang Kumar',
-        domain: 'Head',
-        role: 'Club Head',
-        desc: 'something something',
-        email: 'blah blah blah',
-        picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/bear.png',
-            large: '',
-        },
-        categories: ['all', 'domain head', 'logistics',]
-    },
-    {
-        id: 8,
-        name: 'Sarang Kumar',
-        domain: 'Web Development',
+        id: 13,
+        name: 'Sourav',
+        domain: 'Design',
         role: 'Domain Head',
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/lion.png',
-            large: '',
-        },
-        categories: ['all', 'crew', 'logistics',]
-    },
-    {
-        id: 9,
-        name: 'Sarang Kumar',
-        domain: 'EVM',
-        role: 'Crew',
-        desc: 'something something',
-        email: 'blah blah blah',
-        picture: {
             thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
             large: '',
         },
-        categories: ['all', 'crew', 'web development',]
-    },
-    {
-        id: 9,
-        name: 'Sarang Kumar',
-        domain: 'EVM',
-        role: 'Crew',
-        desc: 'something something',
-        email: 'blah blah blah',
-        picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
-            large: '',
-        },
-        categories: ['all', 'crew', 'content writing',]
+        categories: ['all', 'domain head', 'design',]
     },
 ]
