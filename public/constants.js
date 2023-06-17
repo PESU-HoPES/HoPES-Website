@@ -52,7 +52,7 @@ export const filterRoles = [
     { id: 'web development', label: 'Web Development' },
     { id: 'crew', label: 'Crew' },
     { id: 'operations', label: 'Opeations' },
-    { id: 'content writing', label: 'content writing' },
+    { id: 'content writing', label: 'Content Writing' },
     { id: 'Design', label: 'Design' },
     { id: 'logistics', label: 'Logistics' },
     { id: 'evm', label: 'EVM' },
@@ -282,5 +282,18 @@ export const teamDetails = [
             large: '',
         },
         categories: ['all', 'crew', 'web development',]
+    },
+    {
+        id: 9,
+        name: 'Sarang Kumar',
+        domain: 'EVM',
+        role: 'Crew',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            large: '',
+        },
+        categories: ['all', 'crew', 'content writing',]
     },
 ]

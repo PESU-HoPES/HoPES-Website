@@ -24,7 +24,7 @@ const TeamSection = () => {
         <Subnavbar setLabel={setLabel} label={label} filterTabs={filterRoles} />
       </section>
 
-      <motion.section className='w-screen overflow-x-auto no-x-scroll flex gap-x-2'>
+      <motion.section className='w-screen overflow-x-auto no-x-scroll flex gap-x-2 md:gap-x-6'>
 
         {teamData.map((detail) => {
           return (

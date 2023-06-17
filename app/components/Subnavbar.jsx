@@ -24,12 +24,12 @@ export default function Subnavbar({ label, setLabel, filterTabs }) {
                     {activeTab === tab.id && (
                         <motion.span
                             layoutId="bubble"
-                            className="font-poppins absolute inset-0 z-10 bg-primary-100 mix-blend-difference"
+                            className="font-poppins absolute inset-0 z-10 bg-primary-100 mix-blend-difference min-w-full"
                             style={{ borderRadius: 9999 }}
                             transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                         />
                     )}
-                    {tab.label}
+                    {tab.label.replace(' ', '\xa0')}
                 </button>
             ))}
         </div>
