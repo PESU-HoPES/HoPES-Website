@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Subnavbar from './Subnavbar';
 import WorkCard from './WorkCard';
-import { worksData } from '@/public/constants';
+import { worksData, filterTabs } from '@/public/constants';
 import { LayoutGroup, motion } from 'framer-motion';
 
 const WorkSection = () => {
@@ -20,7 +20,7 @@ const WorkSection = () => {
     return (
         <div>
             <section className='my-5 flex items-center justify-center'>
-                <Subnavbar setLabel={setLabel} label={label} />
+                <Subnavbar setLabel={setLabel} label={label} filterTabs={filterTabs}/>
             </section>
 
             <motion.div

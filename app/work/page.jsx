@@ -3,6 +3,7 @@ import React from 'react'
 import TextAnimation from '../components/TextAnimation'
 import WorkSection from '../components/WorkSection'
 
+
 const WorkPage = () => {
   return (
     <>

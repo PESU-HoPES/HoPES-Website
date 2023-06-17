@@ -16,13 +16,13 @@ export const navlinks = [
     },
     {
         id: 3,
-        title: 'Option3',
-        href: 'option',
+        title: 'Team',
+        href: 'team',
     },
     {
         id: 4,
-        title: 'Option4',
-        href: 'option',
+        title: 'Colaboration',
+        href: 'colaboration',
     },
     // {
     //     id: 7,
@@ -44,6 +44,14 @@ export const filterTabs = [
     { id: 'videography', label: 'Videography' },
     { id: 'interview', label: 'Interview' },
 ];
+
+export const filterRoles = [
+    {id: 'all', label: 'All'},
+    {id: 'HEAD', label: 'Head'},
+    {id: 'domain head', label: 'Domain Head'},
+    {id: 'web development', label: 'Web Development'},
+    {id: 'evm', label: 'EVM'},
+]
 
 export const worksData = [
     {
@@ -151,3 +159,114 @@ export const worksData = [
         categories: ['all', 'photo', 'videography', 'interview'],
     },
 ];
+
+export const teamDetails = [
+    {
+        id: 1,
+        name: 'Sarang Kumar',
+        domain: 'Head',
+        role: 'Club Head',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/bear.png',
+            large: '',
+        },
+    },
+    {
+        id: 2,
+        name: 'Sarang Kumar',
+        domain: 'Web Development',
+        role: 'Domain Head',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/lion.png',
+            large: '',
+        },
+    },
+    {
+        id: 3,
+        name: 'Sarang Kumar',
+        domain: 'EVM',
+        role: 'Crew',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            large: '',
+        },
+    },
+    {
+        id: 4,
+        name: 'Sarang Kumar',
+        domain: 'Head',
+        role: 'Club Head',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/bear.png',
+            large: '',
+        },
+    },
+    {
+        id: 5,
+        name: 'Sarang Kumar',
+        domain: 'Web Development',
+        role: 'Domain Head',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/lion.png',
+            large: '',
+        },
+    },
+    {
+        id: 6,
+        name: 'Sarang Kumar',
+        domain: 'EVM',
+        role: 'Crew',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            large: '',
+        },
+    },
+    {
+        id: 7,
+        name: 'Sarang Kumar',
+        domain: 'Head',
+        role: 'Club Head',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/bear.png',
+            large: '',
+        },
+    },
+    {
+        id: 8,
+        name: 'Sarang Kumar',
+        domain: 'Web Development',
+        role: 'Domain Head',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/lion.png',
+            large: '',
+        },
+    },
+    {
+        id: 9,
+        name: 'Sarang Kumar',
+        domain: 'EVM',
+        role: 'Crew',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            large: '',
+        },
+    },
+]
