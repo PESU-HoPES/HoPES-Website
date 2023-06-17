@@ -7,6 +7,8 @@ import { navlinks } from '@/public/constants';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Button from './Button';
+import Image from 'next/image';
+import { shutter } from '@/public/assets/importing';
 
 function useMenuAnimation(isOpen) {
     const [scope, animate] = useAnimate();
@@ -129,7 +131,9 @@ export default function Navbar() {
                 </div>
             </nav>
             <div className='m-5 flex items-center justify-between gap-5'>
-                <Link href='/'>logo</Link>
+                <Link href='/' className='flex items-center justify-center'>
+                    <Image width={40} height={40} alt="club logo" src={shutter}/>
+                </Link>
                 <MenuToggle toggle={() => setIsOpen(!isOpen)} />
             </div>
         </div>
