@@ -46,11 +46,16 @@ export const filterTabs = [
 ];
 
 export const filterRoles = [
-    {id: 'all', label: 'All'},
-    {id: 'HEAD', label: 'Head'},
-    {id: 'domain head', label: 'Domain Head'},
-    {id: 'web development', label: 'Web Development'},
-    {id: 'evm', label: 'EVM'},
+    { id: 'all', label: 'All' },
+    { id: 'head', label: 'Head' },
+    { id: 'domain head', label: 'Domain Head' },
+    { id: 'web development', label: 'Web Development' },
+    { id: 'crew', label: 'Crew' },
+    { id: 'operations', label: 'Opeations' },
+    { id: 'content writing', label: 'content writing' },
+    { id: 'Design', label: 'Design' },
+    { id: 'logistics', label: 'Logistics' },
+    { id: 'evm', label: 'EVM' },
 ]
 
 export const worksData = [
@@ -172,6 +177,7 @@ export const teamDetails = [
             thumbnail: '/assets/images/avatar/thumbnail/bear.png',
             large: '',
         },
+        categories: ['all', 'head', 'evm'],
     },
     {
         id: 2,
@@ -184,6 +190,7 @@ export const teamDetails = [
             thumbnail: '/assets/images/avatar/thumbnail/lion.png',
             large: '',
         },
+        categories: ['all', 'domain head', 'web development',]
     },
     {
         id: 3,
@@ -196,6 +203,7 @@ export const teamDetails = [
             thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
             large: '',
         },
+        categories: ['all', 'crew', 'evm',]
     },
     {
         id: 4,
@@ -208,6 +216,7 @@ export const teamDetails = [
             thumbnail: '/assets/images/avatar/thumbnail/bear.png',
             large: '',
         },
+        categories: ['all', 'crew', 'design',]
     },
     {
         id: 5,
@@ -220,6 +229,7 @@ export const teamDetails = [
             thumbnail: '/assets/images/avatar/thumbnail/lion.png',
             large: '',
         },
+        categories: ['all', 'domain head', 'design',]
     },
     {
         id: 6,
@@ -232,6 +242,7 @@ export const teamDetails = [
             thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
             large: '',
         },
+        categories: ['all', 'domain head', 'operations',]
     },
     {
         id: 7,
@@ -244,6 +255,7 @@ export const teamDetails = [
             thumbnail: '/assets/images/avatar/thumbnail/bear.png',
             large: '',
         },
+        categories: ['all', 'domain head', 'logistics',]
     },
     {
         id: 8,
@@ -256,6 +268,7 @@ export const teamDetails = [
             thumbnail: '/assets/images/avatar/thumbnail/lion.png',
             large: '',
         },
+        categories: ['all', 'crew', 'logistics',]
     },
     {
         id: 9,
@@ -268,5 +281,6 @@ export const teamDetails = [
             thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
             large: '',
         },
+        categories: ['all', 'crew', 'web development',]
     },
 ]

@@ -12,7 +12,7 @@ const TeamPage = () => {
             <TeamSection />
             <section className='w-screen overflow-x-auto no-x-scroll flex gap-x-2'>
 
-                {teamDetails.map((detail) => {
+                {/* {teamDetails.map((detail) => {
                     return (
                         <Avatar
                             key={detail.id}
@@ -22,7 +22,7 @@ const TeamPage = () => {
                             domain={detail.domain.toLocaleLowerCase()}
                         />
                     );
-                })}
+                })} */}
             </section>
         </>
     );

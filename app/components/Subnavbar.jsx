@@ -8,6 +8,7 @@ export default function Subnavbar({ label, setLabel, filterTabs }) {
 
     useEffect(() => {
         setLabel(activeTab)
+        console.log(label);
     }, [activeTab])
 
     return (
