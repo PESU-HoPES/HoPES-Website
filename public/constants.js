@@ -175,7 +175,7 @@ export const teamDetails = [
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/bear.png',
-            large: '',
+            large: '/assets/images/avatar/large/person1.png',
         },
         categories: ['all', 'head'],
     },
