@@ -28,7 +28,7 @@ export default function Subnavbar({ label, setLabel, filterTabs }) {
                             transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                         />
                     )}
-                    {tab.label.replace(' ', '\xa0')}
+                    {tab.label.replaceAll(' ', '\xa0')}
                 </button>
             ))}
         </div>

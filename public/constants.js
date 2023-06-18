@@ -45,19 +45,6 @@ export const filterTabs = [
     { id: 'interview', label: 'Interview' },
 ];
 
-export const filterRoles = [
-    { id: 'all', label: 'All' },
-    { id: 'head', label: 'Head' },
-    { id: 'domain head', label: 'Domain Head' },
-    { id: 'web development', label: 'Web Development' },
-    { id: 'crew', label: 'Crew' },
-    { id: 'operations', label: 'Opeations' },
-    { id: 'content writing', label: 'Content Writing' },
-    { id: 'design', label: 'Design' },
-    { id: 'logistics', label: 'Logistics' },
-    { id: 'evm', label: 'EVM' },
-]
-
 export const worksData = [
     {
         id: 1,
@@ -165,6 +152,23 @@ export const worksData = [
     },
 ];
 
+export const filterRoles = [
+    { id: 'all', label: 'All' },
+    { id: 'head', label: 'Head' },
+    { id: 'domain head', label: 'Domain Head' },
+    { id: 'crew', label: 'Crew' },
+    { id: 'web development', label: 'Web Development' },
+    { id: 'operations', label: 'Opeations' },
+    { id: 'content', label: 'Content' },
+    { id: 'design', label: 'Design' },
+    { id: 'logistics', label: 'Logistics' },
+    { id: 'evm', label: 'EVM' },
+    { id: 'video editing', label: 'Video Editing' },
+    { id: 'videography', label: 'Videography' },
+    { id: 'sound engineering', label: 'Sound Engineering' },
+    { id: 'campaigning and pr', label: 'Campaigning and PR' },
+]
+
 export const teamDetails = [
     {
         id: 1,
@@ -188,7 +192,7 @@ export const teamDetails = [
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/bear.png',
-            large: '',
+            large: '/assets/images/avatar/large/person2.png',
         },
         categories: ['all', 'domain head', 'web development',]
     },
@@ -201,22 +205,22 @@ export const teamDetails = [
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/blackbird.png',
-            large: '',
+            large: '/assets/images/avatar/large/person3.png',
         },
         categories: ['all', 'domain head', 'evm',]
     },
     {
         id: 4,
         name: 'Nandan',
-        domain: 'Content Writing',
+        domain: 'Content',
         role: 'Crew',
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/cow.png',
-            large: '',
+            large: '/assets/images/avatar/large/person4.png',
         },
-        categories: ['all', 'crew', 'content writing',]
+        categories: ['all', 'crew', 'content',]
     },
     {
         id: 5,
@@ -227,9 +231,9 @@ export const teamDetails = [
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/deer.png',
-            large: '',
+            large: '/assets/images/avatar/large/person5.png',
         },
-        categories: ['all', 'crew', 'design',]
+        categories: ['all', 'crew', 'design', "creative"]
     },
     {
         id: 6,
@@ -240,7 +244,7 @@ export const teamDetails = [
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/ganesha.png',
-            large: '',
+            large: '/assets/images/avatar/large/person6.png',
         },
         categories: ['all', 'crew', 'evm',]
     },
@@ -253,9 +257,9 @@ export const teamDetails = [
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/horseshoe.png',
-            large: '',
+            large: '/assets/images/avatar/large/person7.png',
         },
-        categories: ['all', 'crew', 'logistics',]
+        categories: ['all', 'crew', 'logistics', 'finance']
     },
     {
         id: 8,
@@ -266,7 +270,7 @@ export const teamDetails = [
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/jacutinga.png',
-            large: '',
+            large: '/assets/images/avatar/large/person7.png',
         },
         categories: ['all', 'crew', 'operations',]
     },
@@ -279,35 +283,35 @@ export const teamDetails = [
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/koi.png',
-            large: '',
+            large: '/assets/images/avatar/large/person1.png',
         },
-        categories: ['all', 'crew', 'logistics',]
+        categories: ['all', 'crew', 'logistics', 'finance']
     },
     {
         id: 10,
         name: 'Divya',
-        domain: 'Content Writing',
+        domain: 'Content',
         role: 'Crew',
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/lion.png',
-            large: '',
+            large: '/assets/images/avatar/large/person2.png',
         },
-        categories: ['all', 'crew', 'content writing',]
+        categories: ['all', 'crew', 'content',]
     },
     {
         id: 11,
         name: 'Dinesh',
-        domain: 'Content Writing',
+        domain: 'Content',
         role: 'Domain Head',
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
-            large: '',
+            large: '/assets/images/avatar/large/person3.png',
         },
-        categories: ['all', 'domain head', 'content writing',]
+        categories: ['all', 'domain head', 'content',]
     },
     {
         id: 12,
@@ -318,7 +322,7 @@ export const teamDetails = [
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/panda-bear.png',
-            large: '',
+            large: '/assets/images/avatar/large/person4.png',
         },
         categories: ['all', 'domain head', 'operations',]
     },
@@ -331,8 +335,47 @@ export const teamDetails = [
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/pelican.png',
-            large: '',
+            large: '/assets/images/avatar/large/person5.png',
         },
-        categories: ['all', 'domain head', 'design',]
+        categories: ['all', 'domain head', 'design', 'creative']
+    },
+    {
+        id: 14,
+        name: 'Divyanshu',
+        domain: 'Sound Engineering',
+        role: 'Domain Head',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            large: '/assets/images/avatar/large/person6.png',
+        },
+        categories: ['all', 'domain head', 'sound engineering',]
+    },
+    {
+        id: 15,
+        name: 'Amit',
+        domain: 'Videography',
+        role: 'Domain Head',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/panda-bear.png',
+            large: '/assets/images/avatar/large/person7.png',
+        },
+        categories: ['all', 'domain head', 'videography',]
+    },
+    {
+        id: 16,
+        name: 'Dipti',
+        domain: 'Campaigning and PR',
+        role: 'Domain Head',
+        desc: 'something something',
+        email: 'blah blah blah',
+        picture: {
+            thumbnail: '/assets/images/avatar/thumbnail/pelican.png',
+            large: '/assets/images/avatar/large/person1.png',
+        },
+        categories: ['all', 'domain head', 'campaigning and pr', 'campaigning', 'pr']
     },
 ]

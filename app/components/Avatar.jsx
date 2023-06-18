@@ -2,10 +2,10 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
-import React, { Suspense } from 'react';
+import React from 'react';
 import { AvatarSuspence } from './Suspence';
 
-const Avatar = ({ name, role, domain, imageUrl, categories, id }) => {
+const Avatar = ({ name, role, domain, imageUrl, categories, id, setActivePerson }) => {
     return (
         <AnimatePresence>
             <motion.div
@@ -20,14 +20,18 @@ const Avatar = ({ name, role, domain, imageUrl, categories, id }) => {
                         <Image
                             height={100}
                             width={100}
-                            className={`h-12 w-12 rounded-full border p-0.5 sm:h-14 sm:w-14 md:h-24 md:w-24 ${role === 'club head'
+                            onClick={() => setActivePerson({
+                                id: id,
+                                zoomImageUrl: imageUrl.large
+                            })}
+                            className={`h-12 w-12 rounded-full cursor-pointer border p-0.5 sm:h-14 sm:w-14 md:h-24 md:w-24 ${role === 'club head'
                                 ? 'border-2 border-primary-700'
                                 : role === 'domain head'
                                     ? 'border-primary-600'
                                     : 'border-primary-300'
                                 }`}
                             alt='avatar'
-                            src={imageUrl}
+                            src={imageUrl.thumbnail}
                         />
                     </AvatarSuspence>
                     <div className='flex flex-col items-center justify-center text-center'>
