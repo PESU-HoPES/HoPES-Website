@@ -17,8 +17,8 @@ const TeamSection = () => {
 	useEffect(() => {
 		let filterTeamData = teamDataOriginal.filter((data) => data.categories.includes(label));
 		setTeamData(filterTeamData)
-		console.log(activePerson);
-	}, [label, activePerson])
+		// console.log(activePerson);
+	}, [label])
 
 	return (
 		<div>
@@ -29,7 +29,7 @@ const TeamSection = () => {
 			<aside className='flex justify-center items-center'>
 				{activePerson !== null
 					? <AvatarZoom activePerson={activePerson} />
-					: <p className='text-slate-700 text-sm italic'>Select avatar to know more</p>}
+					: <p className='py-2 text-slate-500 text-sm italic'>Select avatar to know more</p>}
 			</aside>
 
 			<motion.section className='w-screen overflow-x-auto no-x-scroll flex gap-x-2 md:gap-x-6'>
@@ -49,7 +49,7 @@ const TeamSection = () => {
 						);
 					})
 					:
-					<p className='w-full items-center flex justify-center font-lg text-sm italic text-slate-700'>
+					<p className='w-full items-center py-2 flex justify-center font-lg text-sm italic text-slate-500'>
 						We currenly don&apos;t have people from this domain
 					</p>
 				}
