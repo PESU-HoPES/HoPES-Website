@@ -1,7 +1,6 @@
 import React from 'react'
 import Cursor from '../components/Cursor'
 import Button from '../components/Button'
-import AvatarZoom from '../components/AvatarZoom'
 
 const DemoPage = () => {
   return (
@@ -13,8 +12,6 @@ const DemoPage = () => {
         <Button type='primary' wide={false}>Sarang</Button>
         <Button wide={false}>Sarang</Button>
         <Button type='svg' wide={false}>[]</Button>
-
-        <AvatarZoom />
       </div>
     </div>
   )
