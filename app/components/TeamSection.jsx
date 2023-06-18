@@ -6,6 +6,7 @@ import Avatar from './Avatar';
 import { LayoutGroup, motion } from 'framer-motion';
 import { filterRoles, teamDetails } from '@/public/constants';
 import { data } from 'autoprefixer';
+import { AvatarSuspence } from './Suspence';
 
 
 const TeamSection = () => {
@@ -28,15 +29,17 @@ const TeamSection = () => {
 
         {teamData.map((detail) => {
           return (
+
             <Avatar
-              categories={detail.categories}
               key={detail.id}
+              categories={detail.categories}
               id={detail.id}
               imageUrl={detail.picture.thumbnail}
               name={detail.name.toLocaleLowerCase()}
               role={detail.role.toLocaleLowerCase()}
               domain={detail.domain.toLocaleLowerCase()}
             />
+
           );
         })}
       </motion.section>

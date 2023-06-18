@@ -174,7 +174,7 @@ export const teamDetails = [
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/bear.png',
+            thumbnail: '/assets/images/avatar/thumbnail/armadillo.png',
             large: '/assets/images/avatar/large/person1.png',
         },
         categories: ['all', 'head'],
@@ -187,7 +187,7 @@ export const teamDetails = [
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/lion.png',
+            thumbnail: '/assets/images/avatar/thumbnail/bear.png',
             large: '',
         },
         categories: ['all', 'domain head', 'web development',]
@@ -200,7 +200,7 @@ export const teamDetails = [
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            thumbnail: '/assets/images/avatar/thumbnail/blackbird.png',
             large: '',
         },
         categories: ['all', 'domain head', 'evm',]
@@ -213,7 +213,7 @@ export const teamDetails = [
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/bear.png',
+            thumbnail: '/assets/images/avatar/thumbnail/cow.png',
             large: '',
         },
         categories: ['all', 'crew', 'content writing',]
@@ -226,7 +226,7 @@ export const teamDetails = [
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/lion.png',
+            thumbnail: '/assets/images/avatar/thumbnail/deer.png',
             large: '',
         },
         categories: ['all', 'crew', 'design',]
@@ -239,7 +239,7 @@ export const teamDetails = [
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            thumbnail: '/assets/images/avatar/thumbnail/ganesha.png',
             large: '',
         },
         categories: ['all', 'crew', 'evm',]
@@ -252,7 +252,7 @@ export const teamDetails = [
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/bear.png',
+            thumbnail: '/assets/images/avatar/thumbnail/horseshoe.png',
             large: '',
         },
         categories: ['all', 'crew', 'logistics',]
@@ -265,7 +265,7 @@ export const teamDetails = [
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/lion.png',
+            thumbnail: '/assets/images/avatar/thumbnail/jacutinga.png',
             large: '',
         },
         categories: ['all', 'crew', 'operations',]
@@ -278,7 +278,7 @@ export const teamDetails = [
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            thumbnail: '/assets/images/avatar/thumbnail/koi.png',
             large: '',
         },
         categories: ['all', 'crew', 'logistics',]
@@ -291,7 +291,7 @@ export const teamDetails = [
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            thumbnail: '/assets/images/avatar/thumbnail/lion.png',
             large: '',
         },
         categories: ['all', 'crew', 'content writing',]
@@ -317,7 +317,7 @@ export const teamDetails = [
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            thumbnail: '/assets/images/avatar/thumbnail/panda-bear.png',
             large: '',
         },
         categories: ['all', 'domain head', 'operations',]
@@ -330,7 +330,7 @@ export const teamDetails = [
         desc: 'something something',
         email: 'blah blah blah',
         picture: {
-            thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
+            thumbnail: '/assets/images/avatar/thumbnail/pelican.png',
             large: '',
         },
         categories: ['all', 'domain head', 'design',]
