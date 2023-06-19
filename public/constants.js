@@ -1,9 +1,9 @@
 export const navlinks = [
-    {id: 1, title: 'Home', href: '/',},
-    {id: 2, title: 'Work', href: 'work',},
-    {id: 3, title: 'Contact', href: 'contact',},
-    {id: 4, title: 'Team', href: 'team',},
-    {id: 5, title: 'Colabs', href: 'colaboration',},
+    { id: 1, title: 'Home', href: '/', },
+    { id: 2, title: 'Work', href: 'work', },
+    { id: 3, title: 'Contact', href: 'contact', },
+    { id: 4, title: 'Team', href: 'team', },
+    { id: 5, title: 'Colabs', href: 'colaboration', },
 ];
 
 export const filterTabs = [
@@ -158,7 +158,14 @@ export const teamDetails = [
         domain: 'Head',
         role: 'Club Head',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarangkumar@gmail.com',
+                src: '/assets/icons/code.svg',
+                
+            },
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/armadillo.png',
             large: '/assets/images/avatar/large/person1.png',
@@ -172,7 +179,18 @@ export const teamDetails = [
         domain: 'Web Development',
         role: 'Domain Head',
         desc: 'never text me',
-        email: 'sarangkumar@gmail.com',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            },
+            {
+                type: 'instagram',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/document.svg',
+            },
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/bear.png',
             large: '/assets/images/avatar/large/person2.png',
@@ -186,7 +204,13 @@ export const teamDetails = [
         domain: 'EVM',
         role: 'Domain Head',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            }
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/blackbird.png',
             large: '/assets/images/avatar/large/person3.png',
@@ -200,7 +224,13 @@ export const teamDetails = [
         domain: 'Content',
         role: 'Crew',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            }
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/cow.png',
             large: '/assets/images/avatar/large/person4.png',
@@ -214,7 +244,13 @@ export const teamDetails = [
         domain: 'Design',
         role: 'Crew',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            }
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/deer.png',
             large: '/assets/images/avatar/large/person5.png',
@@ -228,7 +264,13 @@ export const teamDetails = [
         domain: 'EVM',
         role: 'Crew',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            },
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/ganesha.png',
             large: '/assets/images/avatar/large/person6.png',
@@ -242,7 +284,13 @@ export const teamDetails = [
         domain: 'Logistics',
         role: 'Crew',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            }
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/horseshoe.png',
             large: '/assets/images/avatar/large/person7.png',
@@ -256,7 +304,13 @@ export const teamDetails = [
         domain: 'Operations',
         role: 'crew',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            }
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/jacutinga.png',
             large: '/assets/images/avatar/large/person7.png',
@@ -270,7 +324,13 @@ export const teamDetails = [
         domain: 'Logistics',
         role: 'Crew',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            }
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/koi.png',
             large: '/assets/images/avatar/large/person1.png',
@@ -284,7 +344,13 @@ export const teamDetails = [
         domain: 'Content',
         role: 'Crew',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            }
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/lion.png',
             large: '/assets/images/avatar/large/person2.png',
@@ -298,7 +364,13 @@ export const teamDetails = [
         domain: 'Content',
         role: 'Domain Head',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            }
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
             large: '/assets/images/avatar/large/person3.png',
@@ -312,7 +384,13 @@ export const teamDetails = [
         domain: 'Operations',
         role: 'Domain Head',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            }
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/panda-bear.png',
             large: '/assets/images/avatar/large/person4.png',
@@ -326,7 +404,13 @@ export const teamDetails = [
         domain: 'Design',
         role: 'Domain Head',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            }
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/pelican.png',
             large: '/assets/images/avatar/large/person5.png',
@@ -340,7 +424,13 @@ export const teamDetails = [
         domain: 'Sound Engineering',
         role: 'Domain Head',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            }
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
             large: '/assets/images/avatar/large/person6.png',
@@ -354,7 +444,13 @@ export const teamDetails = [
         domain: 'Videography',
         role: 'Domain Head',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            }
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/panda-bear.png',
             large: '/assets/images/avatar/large/person7.png',
@@ -368,7 +464,13 @@ export const teamDetails = [
         domain: 'Campaigning and PR',
         role: 'Domain Head',
         desc: 'something something',
-        email: 'blah blah blah',
+        contacts: [
+            {
+                type: 'email',
+                link: 'sarang@gmail.com',
+                src: '/assets/icons/code.svg',
+            }
+        ],
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/pelican.png',
             large: '/assets/images/avatar/large/person1.png',

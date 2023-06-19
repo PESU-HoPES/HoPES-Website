@@ -13,7 +13,7 @@ const Avatar = ({
     domain,
     categories,
     desc,
-    email,
+    contacts,
     setActivePerson,
 }) => {
     return (
@@ -40,7 +40,7 @@ const Avatar = ({
                                     categories: categories,
                                     domain: domain,
                                     desc: desc,
-                                    email: email,
+                                    contacts: contacts,
                                 })
                             }
                             className={`shadow-inner skew-avatar h-12 w-12 cursor-pointer rounded-full border p-0.5 sm:h-14 sm:w-14 md:h-24 md:w-24 ${
@@ -55,7 +55,7 @@ const Avatar = ({
                         />
                     </AvatarSuspence>
                     <div className='flex flex-col items-center justify-center text-center'>
-                        <p className='text-[12px] font-bold'>{name}</p>
+                        <p className='text-[12px] font-bold'>{name.toLowerCase()}</p>
                         <p
                             className={`rounded-sm px-[5px] py-px text-[10px] font-semibold ${
                                 role === 'club head'
@@ -65,7 +65,7 @@ const Avatar = ({
                                     : 'text-primary-300'
                             }`}
                         >
-                            {domain}
+                            {domain.toLowerCase()}
                         </p>
                         {/* {categories.map(category => <p key={`${category}-${id}`}>{category}</p>)} */}
                     </div>
