@@ -172,7 +172,7 @@ export const teamDetails = [
         domain: 'Web Development',
         role: 'Domain Head',
         desc: 'never text me',
-        email: 'blah blah blah',
+        email: 'sarangkumar@gmail.com',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/bear.png',
             large: '/assets/images/avatar/large/person2.png',
@@ -218,7 +218,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/deer.png',
             large: '/assets/images/avatar/large/person5.png',
-            domainIcon: '/assets/icons/pathtool.svg',
+            domainIcon: '/assets/icons/designtool.svg',
         },
         categories: ['all', 'crew', 'design', "creative"]
     },
