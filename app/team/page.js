@@ -10,12 +10,12 @@ const TeamPage = () => {
             <div className='mt-[10vmin] flex flex-col mx-auto items-center md:max-w-[900px] sm:max-w-[720px] ss:max-w-[600px] xs:max-w-[400px] max-w-[300px]'>
                 <div className='mr-auto'>
                     <TextAnimation size='larger'>
-                        Meet&nbsp;our
+                        Meet&nbsp;the
                     </TextAnimation>
                 </div>
                 <div className='ml-auto sm:-mt-6 '>
                     <TextAnimation size='larger'>
-                        wholesum&nbsp;team
+                        best&nbsp;team
                     </TextAnimation>
                 </div>
             </div>

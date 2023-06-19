@@ -1,39 +1,9 @@
 export const navlinks = [
-    {
-        id: 5,
-        title: 'Home',
-        href: '/',
-    },
-    {
-        id: 1,
-        title: 'Work',
-        href: 'work',
-    },
-    {
-        id: 2,
-        title: 'Contact',
-        href: 'contact',
-    },
-    {
-        id: 3,
-        title: 'Team',
-        href: 'team',
-    },
-    {
-        id: 4,
-        title: 'Colabs',
-        href: 'colaboration',
-    },
-    // {
-    //     id: 7,
-    //     title: 'Option4',
-    //     href:'option',
-    // },
-    // {
-    //     id: 6,
-    //     title: 'Option4',
-    //     href:'option',
-    // },
+    {id: 1, title: 'Home', href: '/',},
+    {id: 2, title: 'Work', href: 'work',},
+    {id: 3, title: 'Contact', href: 'contact',},
+    {id: 4, title: 'Team', href: 'team',},
+    {id: 5, title: 'Colabs', href: 'colaboration',},
 ];
 
 export const filterTabs = [
@@ -169,6 +139,18 @@ export const filterRoles = [
     { id: 'campaigning and pr', label: 'Campaigning and PR' },
 ]
 
+// head - trianglelogo
+// web dev - code
+// operations - document
+// content - pathtool
+// design - designtool
+// logistics - cardano
+// evm - manage
+// video editing - videoplay
+// videography - videooctagon
+// sound - microphone
+// camp/pr - diagram 
+
 export const teamDetails = [
     {
         id: 1,
@@ -180,6 +162,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/armadillo.png',
             large: '/assets/images/avatar/large/person1.png',
+            domainIcon: '/assets/icons/trianglelogo.svg',
         },
         categories: ['all', 'head'],
     },
@@ -188,11 +171,12 @@ export const teamDetails = [
         name: 'Sarang Kumar',
         domain: 'Web Development',
         role: 'Domain Head',
-        desc: 'something something',
+        desc: 'never text me',
         email: 'blah blah blah',
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/bear.png',
             large: '/assets/images/avatar/large/person2.png',
+            domainIcon: '/assets/icons/code.svg',
         },
         categories: ['all', 'domain head', 'web development',]
     },
@@ -206,6 +190,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/blackbird.png',
             large: '/assets/images/avatar/large/person3.png',
+            domainIcon: '/assets/icons/manage.svg',
         },
         categories: ['all', 'domain head', 'evm',]
     },
@@ -219,6 +204,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/cow.png',
             large: '/assets/images/avatar/large/person4.png',
+            domainIcon: '/assets/icons/pathtool.svg',
         },
         categories: ['all', 'crew', 'content',]
     },
@@ -232,6 +218,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/deer.png',
             large: '/assets/images/avatar/large/person5.png',
+            domainIcon: '/assets/icons/pathtool.svg',
         },
         categories: ['all', 'crew', 'design', "creative"]
     },
@@ -245,6 +232,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/ganesha.png',
             large: '/assets/images/avatar/large/person6.png',
+            domainIcon: '/assets/icons/manage.svg',
         },
         categories: ['all', 'crew', 'evm',]
     },
@@ -258,6 +246,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/horseshoe.png',
             large: '/assets/images/avatar/large/person7.png',
+            domainIcon: '/assets/icons/cardano.svg',
         },
         categories: ['all', 'crew', 'logistics', 'finance']
     },
@@ -271,6 +260,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/jacutinga.png',
             large: '/assets/images/avatar/large/person7.png',
+            domainIcon: '/assets/icons/document.svg',
         },
         categories: ['all', 'crew', 'operations',]
     },
@@ -284,6 +274,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/koi.png',
             large: '/assets/images/avatar/large/person1.png',
+            domainIcon: '/assets/icons/cardano.svg',
         },
         categories: ['all', 'crew', 'logistics', 'finance']
     },
@@ -297,6 +288,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/lion.png',
             large: '/assets/images/avatar/large/person2.png',
+            domainIcon: '/assets/icons/pathtool.svg',
         },
         categories: ['all', 'crew', 'content',]
     },
@@ -310,6 +302,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
             large: '/assets/images/avatar/large/person3.png',
+            domainIcon: '/assets/icons/pathtool.svg',
         },
         categories: ['all', 'domain head', 'content',]
     },
@@ -323,6 +316,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/panda-bear.png',
             large: '/assets/images/avatar/large/person4.png',
+            domainIcon: '/assets/icons/document.svg',
         },
         categories: ['all', 'domain head', 'operations',]
     },
@@ -336,6 +330,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/pelican.png',
             large: '/assets/images/avatar/large/person5.png',
+            domainIcon: '/assets/icons/designtool.svg',
         },
         categories: ['all', 'domain head', 'design', 'creative']
     },
@@ -349,6 +344,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/monkey.png',
             large: '/assets/images/avatar/large/person6.png',
+            domainIcon: '/assets/icons/microphone.svg',
         },
         categories: ['all', 'domain head', 'sound engineering',]
     },
@@ -362,6 +358,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/panda-bear.png',
             large: '/assets/images/avatar/large/person7.png',
+            domainIcon: '/assets/icons/videooctagon.svg',
         },
         categories: ['all', 'domain head', 'videography',]
     },
@@ -375,6 +372,7 @@ export const teamDetails = [
         picture: {
             thumbnail: '/assets/images/avatar/thumbnail/pelican.png',
             large: '/assets/images/avatar/large/person1.png',
+            domainIcon: '/assets/icons/diagram.svg',
         },
         categories: ['all', 'domain head', 'campaigning and pr', 'campaigning', 'pr']
     },

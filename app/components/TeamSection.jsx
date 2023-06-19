@@ -43,19 +43,20 @@ const TeamSection = () => {
 				}
             </aside>
 
-            <motion.section className='no-x-scroll flex w-screen gap-x-2 overflow-x-auto py-5 md:gap-x-6'>
+            <motion.section layout className='no-x-scroll flex w-screen gap-x-2 overflow-x-auto py-5 md:gap-x-6'>
                 {teamData.length !== 0 ? (
                     teamData.map((detail) => {
                         return (
                             <Avatar
+                                {...detail}
                                 key={detail.id}
                                 setActivePerson={setActivePerson}
-                                categories={detail.categories}
-                                id={detail.id}
-                                imageUrl={detail.picture}
-                                name={detail.name.toLocaleLowerCase()}
-                                role={detail.role.toLocaleLowerCase()}
-                                domain={detail.domain.toLocaleLowerCase()}
+                                // categories={detail.categories}
+                                // id={detail.id}
+                                // imageUrl={detail.picture}
+                                // name={detail.name.toLocaleLowerCase()}
+                                // role={detail.role.toLocaleLowerCase()}
+                                // domain={detail.domain.toLocaleLowerCase()}
                             />
                         );
                     })

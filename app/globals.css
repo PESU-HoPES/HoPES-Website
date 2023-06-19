@@ -249,3 +249,25 @@ body {
   top: 164px;
   width: 340px; */
 }
+
+.skew-avatar {
+  --a: 8deg;
+  transform: perspective(400) rotate3d(var(--r, 1, -1), 0, calc(var(--i, 1)*var(--a)));
+  --webkit-mask: linear-gradient(135deg, #000 40%, #000, #000c 60%) 100% 100%/250% 250%;
+
+}
+
+.skew-avatar:hover {
+  --i: -1;
+  --webkit-mask-position: 0 0;
+}
+
+.alt {
+  -r: 1, 1;
+  --webkit-mask: linear-gradient(45deg, #000 40%, #000, #000c 60%) 0% 100%/250% 250%;
+}
+
+.alt:hover {
+  --webkit-mask-position: 100% 0;
+
+}
