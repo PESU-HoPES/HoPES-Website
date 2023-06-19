@@ -1,4 +1,4 @@
-import { down_arrow, instagram } from '@/public/assets/importing';
+import { down_arrow, instagram, right_arrow } from '@/public/assets/importing';
 import { AnimatePresence, motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 import React, { Suspense, useRef, useState } from 'react';
@@ -86,32 +86,38 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id, date }) => {
                     layout
                     className='w-full'
                 >
-                    <div className='flex flex-col items-start justify-center px-3 gap-y-2'>
+                    <div className='flex flex-col items-start justify-center gap-y-2 px-3'>
                         <div className='grid w-full grid-cols-8 md:grid-cols-10'>
-                            <h1 className='col-span-7 md:col-span-9 line-clamp-2 text-lg sm:text-2xl'>
+                            <h1 className='col-span-7 line-clamp-2 text-lg sm:text-2xl md:col-span-9'>
                                 {heading}
                             </h1>
                             <div
                                 onClick={() =>
                                     setIsDropDownOpen(!isDropDownOpen)
                                 }
-                                className='mt-1 transition-all dropdown-container flex h-7 w-7 cursor-pointer items-center justify-center self-start justify-self-end rounded-full bg-slate-700/50 hover:bg-slate-700  p-1'
+                                className='animate-bounce hover:animate-none mt-2 flex h-7 w-7 cursor-pointer items-center justify-center self-start justify-self-end rounded-full bg-slate-700/50 p-1 transition-all  hover:bg-slate-700'
                             >
                                 <Image
                                     src={down_arrow}
                                     height={30}
                                     width={30}
                                     alt='drop down button'
-                                    className={`dropdown-image transition-all ${isDropDownOpen ? 'rotate-90' : ''
-                                        }`}
+                                    className={`transition-all ${isDropDownOpen ? 'rotate-90' : ''}`}
                                 />
                             </div>
                             <span className='col-span-full text-xs text-slate-400'>
                                 {date.toDateString()}
                             </span>
-                            <Link href='/work' className='col-span-full'>
-                            <Button type='primary' size={true}>Sarang</Button>
-                            </Link>
+                            {/* <Link href='/work' className='col-span-full'>
+                                <Image
+                                    src={right_arrow}
+                                    height={30}
+                                    width={35}
+                                    alt='know more'
+                                    className='bg-primary-700 rounded-full w-10 h-5'
+                                />
+                            </Link> */}
+                                {/* <Button type='primary' size="small" wide={true}>Know&nbsp;more</Button> */}
                         </div>
 
                         {isDropDownOpen && (

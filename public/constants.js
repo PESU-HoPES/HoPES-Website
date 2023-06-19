@@ -4,7 +4,7 @@ export const navlinks = [
     { id: 3, title: 'Contact', href: 'contact', },
     { id: 4, title: 'Team', href: 'team', },
     { id: 5, title: 'Collabs', href: 'collaboration', },
-    // { id: 6, title: 'Other Works', href: 'other works', },
+    { id: 6, title: 'Highlight', href: 'highlight', },
 ];
 
 export const filterTabs = [

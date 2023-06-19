@@ -16,33 +16,33 @@ function useMenuAnimation(isOpen) {
     useEffect(() => {
         const menuAnimations = isOpen
             ? [
-                  [
-                      'nav',
-                      { transform: 'translateX(0%)' },
-                      { ease: [0.08, 0.65, 0.53, 0.96], duration: 0.6 },
-                  ],
-                  [
-                      '.word',
-                      {
-                          transform: 'scale(1)',
-                          opacity: 1,
-                          filter: 'blur(0px)',
-                      },
-                      { delay: stagger(0.03), at: '>' },
-                  ],
-              ]
+                [
+                    'nav',
+                    { transform: 'translateX(0%)' },
+                    { ease: [0.08, 0.65, 0.53, 0.96], duration: 0.6 },
+                ],
+                [
+                    '.word',
+                    {
+                        transform: 'scale(1)',
+                        opacity: 1,
+                        filter: 'blur(0px)',
+                    },
+                    { delay: stagger(0.03), at: '>' },
+                ],
+            ]
             : [
-                  [
-                      '.word',
-                      {
-                          transform: 'scale(0.2)',
-                          opacity: 0,
-                          filter: 'blur(5px)',
-                      },
-                      { delay: stagger(0.03, { from: 'last' }), at: '<' },
-                  ],
-                  ['nav', { transform: 'translateX(100%)' }, { at: '-0.1' }],
-              ];
+                [
+                    '.word',
+                    {
+                        transform: 'scale(0.2)',
+                        opacity: 0,
+                        filter: 'blur(5px)',
+                    },
+                    { delay: stagger(0.03, { from: 'last' }), at: '<' },
+                ],
+                ['nav', { transform: 'translateX(100%)' }, { at: '-0.1' }],
+            ];
 
         animate([
             [
@@ -81,24 +81,16 @@ export default function Navbar() {
                             GET IN TOUCH
                         </p>
                         <div className='space-y-1 text-2xl sm:text-3xl'>
-                            <a
-                                href='hopes-website.vercel.app'
-                                className='block'
-                            >
+                            <a href='mailto:hopes.rr@pes.edu' className='block'>
+                                <motion.h1 className='hover-underline-animation'>
+                                    hopes.rr@pes.edu
+                                </motion.h1>
+                            </a>
+                            <a href='hopes-website.vercel.app' className='block'>
                                 <motion.h1 className='hover-underline-animation'>
                                     hopes.vercel.app
                                 </motion.h1>
                             </a>
-                            <Link href='/' className='block'>
-                                <motion.h1 className='hover-underline-animation'>
-                                    sarang@gmail.com
-                                </motion.h1>
-                            </Link>
-                            <Link href='/' className='block'>
-                                <motion.h1 className='hover-underline-animation'>
-                                    website url
-                                </motion.h1>
-                            </Link>
                         </div>
                     </div>
                     <ul className='flex flex-grow flex-col'>
@@ -106,7 +98,7 @@ export default function Navbar() {
                             <motion.li
                                 key={navlink.id}
                                 layout
-                                className='-my-2 inline-block md:-my-4'
+                                className='-my-3 inline-block md:-my-4'
                                 whileHover={{
                                     x: 50,
                                     scale: 1.1,
@@ -132,7 +124,7 @@ export default function Navbar() {
             </nav>
             <div className='m-5 flex items-center justify-between gap-5'>
                 <Link href='/' className='flex items-center justify-center'>
-                    <Image width={40} height={40} alt="club logo" src={shutter}/>
+                    <Image width={40} height={40} alt="club logo" src={shutter} />
                 </Link>
                 <MenuToggle toggle={() => setIsOpen(!isOpen)} />
             </div>
@@ -159,8 +151,8 @@ export const MenuToggle = ({ toggle }) => {
                     <Button wide={true}>Get&nbsp;started</Button>
                 </Link>
             )}
-            <button 
-            aria-label='navigation ham'
+            <button
+                aria-label='navigation ham'
                 className='z-50 flex h-[50px] w-[50px] items-center justify-center rounded-full bg-primary-600 p-[10px]'
                 onClick={toggle}
             >
