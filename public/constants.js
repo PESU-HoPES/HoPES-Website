@@ -3,7 +3,8 @@ export const navlinks = [
     { id: 2, title: 'Work', href: 'work', },
     { id: 3, title: 'Contact', href: 'contact', },
     { id: 4, title: 'Team', href: 'team', },
-    { id: 5, title: 'Colabs', href: 'colaboration', },
+    { id: 5, title: 'Collabs', href: 'collaboration', },
+    // { id: 6, title: 'Other Works', href: 'other works', },
 ];
 
 export const filterTabs = [
@@ -13,6 +14,7 @@ export const filterTabs = [
     { id: 'hopes', label: 'Hopes' },
     { id: 'videography', label: 'Videography' },
     { id: 'interview', label: 'Interview' },
+    // { id: 'interview', label: 'Podcast' },
 ];
 
 export const worksData = [
@@ -22,6 +24,7 @@ export const worksData = [
         heading: 'Highlighting urban redevelopment ni VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA', 'nexus'],
+        date: new Date("2022-3-25"),
         categories: ['all', 'picture', 'hopes', 'web'],
     },
     {
@@ -30,6 +33,7 @@ export const worksData = [
         heading: 'A purrfect immersize experience for the felines and friends of POTT',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
+        date: new Date("2022-4-28"),
         categories: ['all', 'web', 'science'],
     },
     {
@@ -38,6 +42,7 @@ export const worksData = [
         heading: 'Building a community',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
+        date: new Date("2022-5-01"),
         categories: ['all', 'videography'],
     },
     {
@@ -46,6 +51,7 @@ export const worksData = [
         heading: 'Spreading its virtual wings',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
+        date: new Date("2022-8-01"),
         categories: ['all', 'picture'],
     },
     {
@@ -54,6 +60,7 @@ export const worksData = [
         heading: 'Building brand loyality through online design tool',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
+        date: new Date("2023-8-01"),
         categories: ['all', 'web', 'hopes'],
     },
     {
@@ -62,6 +69,7 @@ export const worksData = [
         heading: 'Revolutionizing safety training in the workplace with VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
+        date: new Date("2022-8-11"),
         categories: ['all', 'photo', 'videography'],
     },
     {
@@ -69,6 +77,7 @@ export const worksData = [
         imageUrl: 'https://images.pexels.com/photos/16154507/pexels-photo-16154507/free-photo-of-man-people-woman-art.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'Highlighting urban redevelopment ni VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
+        date: new Date("2022-11-4"),
         clubs: ['VERSELE LAGA', 'nexus'],
         categories: ['all', 'picture', 'hopes', 'web'],
     },
@@ -77,6 +86,7 @@ export const worksData = [
         imageUrl: 'https://images.pexels.com/photos/6416960/pexels-photo-6416960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'A purrfect immersize experience for the felines and friends of POTT',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
+        date: new Date("2023-1-8"),
         clubs: ['VERSELE LAGA'],
         categories: ['all', 'web', 'science'],
     },
@@ -86,6 +96,7 @@ export const worksData = [
         heading: 'Building a community',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
+        date: new Date("2023-2-10"),
         categories: ['all', 'videography'],
     },
     {
@@ -94,14 +105,16 @@ export const worksData = [
         heading: 'Spreading its virtual wings',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
-        categories: ['all', 'picture'],
-    },
+    date: new Date("2023-10-15"),
+    categories: ['all', 'picture'],
+},
     {
         id: 11,
         imageUrl: 'https://images.pexels.com/photos/17202898/pexels-photo-17202898/free-photo-of-city-street-building-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         heading: 'Building brand loyality through online design tool',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
+        date: new Date("2023-10-15"),
         categories: ['all', 'web', 'hopes'],
     },
     {
@@ -110,6 +123,7 @@ export const worksData = [
         heading: 'Revolutionizing safety training in the workplace with VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
+        date: new Date("2019-4-15"),
         categories: ['all', 'photo', 'videography'],
     },
     {
@@ -118,6 +132,7 @@ export const worksData = [
         heading: 'Revolutionizing safety training in the workplace with VR',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
+        date: new Date("2022-5-15"),
         categories: ['all', 'photo', 'videography', 'interview'],
     },
 ];
@@ -157,7 +172,7 @@ export const teamDetails = [
         name: 'Siddharth',
         domain: 'Head',
         role: 'Club Head',
-        desc: 'something something',
+        desc: 'something something fkasd fajsgd fkjahg sdkfga sdf ga fas fasdfadfg sadfg ',
         contacts: [
             {
                 type: 'email',
@@ -479,3 +494,4 @@ export const teamDetails = [
         categories: ['all', 'domain head', 'campaigning and pr', 'campaigning', 'pr']
     },
 ]
+

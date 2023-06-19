@@ -12,7 +12,7 @@ const AvatarZoom = ({ activePerson }) => {
                 exit={{ opacity: 1, duration: 2 }}
                 className='person relative flex w-60 flex-col items-center'
             >
-                <div className='flex w-full items-start justify-between'>
+                <div className='relative flex w-full items-start justify-between'>
                     <Image
                         className='h-8 w-8 rounded-lg p-2 bg-white'
                         src={activePerson.picture.domainIcon}
@@ -20,12 +20,12 @@ const AvatarZoom = ({ activePerson }) => {
                         width={30}
                         alt={`${activePerson.role}-domain-icon`}
                     />
-                    <div className='flex flex-col items-center justify-center gap-y-1 border-r p-1'>
+                    <div className='absolute right-0 flex flex-col items-center justify-center gap-y-2 border-r p-1'>
                         {activePerson.contacts.map((contact) => (
                             <Link
                                 key={contact.type}
                                 href={contact.link}
-                                className='hover:bg-white'>
+                                className='hover:bg-slate-100/30 relative rounded-lg p-1 -mt-1 transition-colors after:absolute after:top-0 after:w-full after:h-full after:left-0 hover:after:animate-ping'>
                                 <Image
                                     src={contact.src}
                                     alt={contact.type}
@@ -52,7 +52,7 @@ const AvatarZoom = ({ activePerson }) => {
                         height={75}
                         alt={`${activePerson.name}-thumbnail`}
                         src={activePerson.picture.thumbnail}
-                        className='absolute -bottom-[100px] left-2  h-[75px]  w-[75px] rounded-full border-4 border-primary-700 md:-bottom-10'
+                        className='absolute -bottom-[100px] left-2 h-[75px]  w-[75px] rounded-full border-4 border-primary-700 md:-bottom-10'
                     />
                 </div>
                 <p className='text-gradient text-xl font-extrabold'>
@@ -61,7 +61,7 @@ const AvatarZoom = ({ activePerson }) => {
                 <p className='text-sm font-semibold text-primary-700'>
                     {activePerson.domain}
                 </p>
-                <p className='text-sm'>{activePerson.desc}</p>
+                <p className='text-[10px] text-center'>{activePerson.desc}</p>
             </div>
         </AnimatePresence>
     );

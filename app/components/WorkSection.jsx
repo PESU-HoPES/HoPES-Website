@@ -8,7 +8,7 @@ import { LayoutGroup, motion } from 'framer-motion';
 
 const WorkSection = () => {
     const [label, setLabel] = useState('all');
-    const [workData, setWorkData] = useState(worksData);
+    const [workData, setWorkData] = useState(worksData.sort((a,b)=>Number(a.date)  - Number(b.date)));
 
     useEffect(() => {
         let filterWorkData = worksData.filter((data) =>
@@ -31,13 +31,14 @@ const WorkSection = () => {
                 <LayoutGroup>
                     {workData.map((data) => (
                         <WorkCard
-                            id={data.id}
                             key={data.id}
-                            heading={data.heading}
-                            desc={data.desc}
-                            imageUrl={data.imageUrl}
-                            clubs={data.clubs}
-                            categories={data.categories.slice(1)}
+                            {...data}
+                            // id={data.id}
+                            // heading={data.heading}
+                            // desc={data.desc}
+                            // imageUrl={data.imageUrl}
+                            // clubs={data.clubs}
+                            // categories={data.categories.slice(1)}
                         />
                     ))}
                 </LayoutGroup>

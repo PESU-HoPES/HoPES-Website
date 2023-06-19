@@ -1,11 +1,15 @@
-import { instagram } from '@/public/assets/importing';
+import { down_arrow, instagram } from '@/public/assets/importing';
 import { AnimatePresence, motion, useInView } from 'framer-motion';
 import Image from 'next/image';
-import React, { Suspense, useRef } from 'react';
+import React, { Suspense, useRef, useState } from 'react';
 import { WorkImageSuspence } from './Suspence';
+import Button from './Button';
+import Link from 'next/link';
+import TextAnimation from './TextAnimation';
 
-const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
+const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id, date }) => {
     const ref = useRef(null);
+    const [isDropDownOpen, setIsDropDownOpen] = useState(false);
     const isInView = useInView(ref, { once: true });
 
     return (
@@ -15,7 +19,7 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 exit={{ opacity: 0, duration: 1 }}
-                className='m-4 sm:mx-2 flex max-w-[500px] md:max-w-[550px] lg:max-w-[600px] flex-col items-center justify-start gap-y-2 place-self-center self-stretch sm:self-start md:m-5'
+                className='m-4 flex max-w-[500px] flex-col items-center justify-start gap-y-2 place-self-center self-stretch sm:mx-2 sm:self-start md:m-5 md:max-w-[550px] lg:max-w-[600px]'
             >
                 <motion.div
                     layout
@@ -53,33 +57,6 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                                 className='aspect-video'
                             />
                         </motion.video>
-
-                        {/* <div className='flex h-[196px] min-w-[350px] items-center justify-center rounded-lg border-[1px] border-slate-200'>
-                            <div className=' rounded-full bg-slate-800 p-3'>
-                                <svg
-                                    className='h-5 w-5 animate-spin text-white'
-                                    xmlns='http://www.w3.org/2000/svg'
-                                    fill='none'
-                                    viewBox='0 0 24 24'
-                                >
-                                    <circle
-                                        className='opacity-25'
-                                        cx='12'
-                                        cy='12'
-                                        r='10'
-                                        stroke='currentColor'
-                                        strokeWidth={4}
-                                    >
-                                        {' '}
-                                    </circle>
-                                    <path
-                                        className='opacity-75'
-                                        fill='currentColor'
-                                        d='M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'
-                                    ></path>
-                                </svg>
-                            </div>
-                        </div> */}
                     </WorkImageSuspence>
 
                     <div className='workcardlinks absolute right-0 top-0 m-1 flex flex-col items-center gap-y-3 rounded-lg p-2'>
@@ -109,33 +86,66 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id }) => {
                     layout
                     className='w-full'
                 >
-                    <div className='flex flex-col items-start justify-center px-3'>
-                        <h1 className='line-clamp-2 text-lg sm:text-2xl'>
-                            {heading}
-                        </h1>
+                    <div className='flex flex-col items-start justify-center px-3 gap-y-2'>
+                        <div className='grid w-full grid-cols-8 md:grid-cols-10'>
+                            <h1 className='col-span-7 md:col-span-9 line-clamp-2 text-lg sm:text-2xl'>
+                                {heading}
+                            </h1>
+                            <div
+                                onClick={() =>
+                                    setIsDropDownOpen(!isDropDownOpen)
+                                }
+                                className='mt-1 transition-all dropdown-container flex h-7 w-7 cursor-pointer items-center justify-center self-start justify-self-end rounded-full bg-slate-700/50 hover:bg-slate-700  p-1'
+                            >
+                                <Image
+                                    src={down_arrow}
+                                    height={30}
+                                    width={30}
+                                    alt='drop down button'
+                                    className={`dropdown-image transition-all ${isDropDownOpen ? 'rotate-90' : ''
+                                        }`}
+                                />
+                            </div>
+                            <span className='col-span-full text-xs text-slate-400'>
+                                {date.toDateString()}
+                            </span>
+                            <Link href='/work' className='col-span-full'>
+                            <Button type='primary' size={true}>Sarang</Button>
+                            </Link>
+                        </div>
 
-                        {/* <TextAnimation>{heading}</TextAnimation> */}
-                        {/* <p>{desc}</p> */}
-                        <div className='flex gap-x-4'>
-                            {clubs.map((club, index) => (
-                                <span
-                                    className='text-gradient mx-0 font-extrabold uppercase'
-                                    key={index}
+                        {isDropDownOpen && (
+                            <AnimatePresence>
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 1 }}
                                 >
-                                    {club}
-                                </span>
-                            ))}
-                        </div>
-                        <div className='flex gap-x-4'>
-                            {categories.map((category, index) => (
-                                <span
-                                    className='rounded-md text-xs font-semibold uppercase tracking-wide text-primary-700 sm:text-sm'
-                                    key={index}
-                                >
-                                    {category}
-                                </span>
-                            ))}
-                        </div>
+                                    <div className='flex gap-x-4'>
+                                        {clubs.map((club, index) => (
+                                            <span
+                                                className='text-gradient mx-0 font-extrabold uppercase'
+                                                key={index}
+                                            >
+                                                {club}
+                                            </span>
+                                        ))}
+                                    </div>
+                                    <div className='flex gap-x-4'>
+                                        {categories
+                                            .slice(1)
+                                            .map((category, index) => (
+                                                <span
+                                                    className='rounded-md text-xs font-semibold uppercase tracking-wide text-primary-700 sm:text-sm'
+                                                    key={index}
+                                                >
+                                                    {category}
+                                                </span>
+                                            ))}
+                                    </div>
+                                </motion.div>
+                            </AnimatePresence>
+                        )}
                     </div>
                 </motion.div>
             </motion.div>
