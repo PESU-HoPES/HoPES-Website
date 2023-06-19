@@ -13,7 +13,7 @@ const AvatarZoom = ({ activePerson }) => {
                 <div className='container rounded-full h-[312px] w-[400px] scale-[0.48] hover:scale-[0.54]'>
                     <div className='container-inner relative -top-[200px] origin-[50%]'>
                         <div className='circle bg-primary-700 rounded-full h-[380px] left-[10px] cursor-pointer absolute top-[210px] w-[380px]'></div>
-                        <Image
+                        <Image 
                             alt={`avatar-${activePerson.id}`}
                             width={340}
                             height={400}

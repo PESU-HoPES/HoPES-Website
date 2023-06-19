@@ -73,14 +73,14 @@ export default function Navbar() {
     const scope = useMenuAnimation(isOpen);
 
     return (
-        <div ref={scope} className='z-50 overflow-scroll'>
+        <div ref={scope} className='z-50 overflow-y-auto'>
             <nav className='fixed right-0 top-0 z-50 min-h-[100dvh] w-full translate-x-full transform bg-primary-700 pt-[100px]'>
                 <div className='flex h-full min-h-full flex-col-reverse items-start justify-start gap-x-3 gap-y-12 px-10 sm:flex-row sm:items-end sm:justify-between sm:px-20'>
                     <div className='flex flex-grow flex-col gap-y-5 font-medium'>
                         <p className='text-sm tracking-[0.1rem]'>
                             GET IN TOUCH
                         </p>
-                        <div className='space-y-1 text-3xl sm:text-4xl'>
+                        <div className='space-y-1 text-2xl sm:text-3xl'>
                             <a
                                 href='hopes-website.vercel.app'
                                 className='block'
