@@ -5,7 +5,93 @@ export const navlinks = [
     { id: 4, title: 'Team', href: 'team', },
     { id: 5, title: 'Collabs', href: 'collaboration', },
     { id: 6, title: 'Highlight', href: 'highlight', },
+    // { id: 7, title: 'Others', href: 'others', },
 ];
+
+export const footerLinks = [
+    {
+        category: 'Main 1',
+        sublinks: [
+            {
+                href: '/',
+                title: 'sublink 1.1',
+                new: false,
+            },
+            {
+                href: '/',
+                title: 'sublink 1.2',
+                new: false,
+            },
+            {
+                href: '/',
+                title: 'sublink 1.3',
+                new: false,
+            },
+        ]
+    },
+    {
+        category: 'Main 2',
+        sublinks: [
+            {
+                href: '/',
+                title: 'sublink 2.1',
+                new: false,
+            }, {
+                href: '/',
+                title: 'sublink 2.2',
+                new: false,
+            }, {
+                href: '/',
+                title: 'sublink 2.3',
+                new: false,
+            }, {
+                href: '/',
+                title: 'sublink 2.4',
+                new: false,
+            }, {
+                href: '/',
+                title: 'sublink 2.5',
+                new: false,
+            },
+        ]
+    },
+    {
+        category: 'Main 3',
+        sublinks: [
+            {
+                href: '/',
+                title: 'sublink 3.1',
+                new: false,
+            }, {
+                href: '/',
+                title: 'sublink 3.2',
+                new: false,
+            }, {
+                href: '/',
+                title: 'sublink 3.3',
+                new: false,
+            },
+        ]
+    },
+    {
+        category: 'Main 4',
+        sublinks: [
+            {
+                href: '/',
+                title: 'sublink 4.1',
+                new: true,
+            }, {
+                href: '/',
+                title: 'sublink 4.2',
+                new: false,
+            }, {
+                href: '/',
+                title: 'sublink 4.3',
+                new: false,
+            },
+        ]
+    },
+]
 
 export const filterTabs = [
     { id: 'all', label: 'All' },
@@ -105,9 +191,9 @@ export const worksData = [
         heading: 'Spreading its virtual wings',
         desc: 'lorem Ipsum is simply dummy text of the printing and typesetting industry     and is simply available     to the public reader and printer',
         clubs: ['VERSELE LAGA'],
-    date: new Date("2023-10-15"),
-    categories: ['all', 'picture'],
-},
+        date: new Date("2023-10-15"),
+        categories: ['all', 'picture'],
+    },
     {
         id: 11,
         imageUrl: 'https://images.pexels.com/photos/17202898/pexels-photo-17202898/free-photo-of-city-street-building-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -136,6 +222,75 @@ export const worksData = [
         categories: ['all', 'photo', 'videography', 'interview'],
     },
 ];
+
+export const carouseldata = [
+    {
+        title: 'Paris',
+        num: 1,
+        imageUrl: 'https://media.istockphoto.com/id/949299844/it/foto/vista-prospettica-dellesterno-delledificio-contemporaneo.jpg?s=612x612&w=0&k=20&c=_DR1aRHuTEV3EYBJo1ZXq1pF4SgwB9EVWQLaBj4sC5g=',
+        link: '/',
+    },
+    {
+        title: 'Warshaw',
+        num: 2,
+        imageUrl: 'https://media.istockphoto.com/id/1150545984/it/foto/palazzo-moderno-di-lusso-con-piscina.jpg?s=612x612&w=0&k=20&c=Pbrai_VGc9tUviMCF1UaBErdS1YGyIVWsD29jzMZwTY=',
+        link: '/',
+    },
+    {
+        title: 'Madrid',
+        num: 3,
+        imageUrl: 'https://media.istockphoto.com/id/1214351345/it/foto/guardando-direttamente-lo-skyline-del-quartiere-finanziario-nel-centro-di-londra-immagine-di.jpg?s=612x612&w=0&k=20&c=oNNbPzPvcQ-4RA6AeatNIxHQIafBiXmDRtUUY0Ska-I=',
+        link: '/',
+    },
+    {
+        title: 'Sydney',
+        num: 4,
+        imageUrl: 'https://media.istockphoto.com/id/904390980/it/foto/foto-di-architettura-contemporanea-astratta.jpg?s=612x612&w=0&k=20&c=_P4Wmx5nq5MeDuimpNklKCBlrLovmCyd9lfiMKeJZDs=',
+        link: '/',
+    },
+    {
+        title: 'Instanbul',
+        num: 5,
+        imageUrl: 'https://media.istockphoto.com/id/130408311/it/foto/piscina-allesterno-della-casa-moderna-al-crepuscolo.jpg?s=612x612&w=0&k=20&c=ZoVjx7uDjoHKmpM1ayW6UR1SQOoYh_xx-QMG_qeOYs0=',
+        link: '/',
+    },
+    {
+        title: 'Prague',
+        num: 6,
+        imageUrl: 'https://media.istockphoto.com/id/1299954175/it/foto/villa-cubica-moderna.jpg?s=612x612&w=0&k=20&c=DhGhb3c1E3DW_fbrWJ_R_Zh0Lbwu6syFeRLsKlZ9no8=',
+        link: '/',
+    },
+    {
+        title: 'Munich',
+        num: 7,
+        imageUrl: 'https://media.istockphoto.com/id/926689776/it/foto/vista-ad-angolo-basso-dei-grattacieli-di-new-york.jpg?s=612x612&w=0&k=20&c=DmEB0Ty7ZwDnBoU5SuA8FNevOp4G1UcECw5aS4vA9A8=',
+        link: '/',
+    },
+    {
+        title: 'Venice',
+        num: 8,
+        imageUrl: 'https://media.istockphoto.com/id/1191376167/it/foto/villa-dellisola.jpg?s=612x612&w=0&k=20&c=PKslWo4FdbjinohKQlK_oWL34jqAsnzMTdy2bxEAf-I=',
+        link: '/',
+    },{
+        title: 'Oslo',
+        num: 9,
+        imageUrl: 'https://media.istockphoto.com/id/184316397/it/foto/londra-edifici-aziendali.jpg?s=612x612&w=0&k=20&c=XqrRxEPzFnwRFk7PQrCiu9-FPfCTPyMe5BKKaxYXCs8=',
+        link: '/',   
+    },
+    {
+        title: 'London',
+        num: 10,
+        imageUrl: 'https://media.istockphoto.com/id/184619832/it/foto/distretto-finanziario-al-crepuscolo-londra.jpg?s=612x612&w=0&k=20&c=RAThrJOBY6vhlT6-kQpu9-9jLEzWToYfdw46S8B0Mu0=',
+        link: '/',   
+    },
+    {
+        title: 'NY',
+        num: 1,
+        imageUrl: 'https://media.istockphoto.com/id/184619832/it/foto/distretto-finanziario-al-crepuscolo-londra.jpg?s=612x612&w=0&k=20&c=RAThrJOBY6vhlT6-kQpu9-9jLEzWToYfdw46S8B0Mu0=',
+        link: '/',   
+    },
+
+]
 
 export const filterRoles = [
     { id: 'all', label: 'All' },
@@ -178,7 +333,7 @@ export const teamDetails = [
                 type: 'email',
                 link: 'sarangkumar@gmail.com',
                 src: '/assets/icons/code.svg',
-                
+
             },
         ],
         picture: {
