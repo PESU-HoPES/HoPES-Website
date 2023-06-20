@@ -34,13 +34,13 @@ const TeamSection = () => {
             <aside className='flex items-center justify-center'>
                 {activePerson !== null ? (
                     <AvatarZoom activePerson={activePerson} />
-                ) : teamData.length !== 0 ? 
+                ) : teamData.length !== 0 ?
                     <p className='py-2 text-sm italic text-slate-500'>
-                        Select avatar to know more 
-                    </p> : 
+                        Select avatar to know more
+                    </p> :
                     ''
-                
-				}
+
+                }
             </aside>
 
             <motion.section layout className='no-x-scroll flex w-screen gap-x-2 overflow-x-auto py-5 md:gap-x-6'>
@@ -51,12 +51,6 @@ const TeamSection = () => {
                                 {...detail}
                                 key={detail.id}
                                 setActivePerson={setActivePerson}
-                                // categories={detail.categories}
-                                // id={detail.id}
-                                // imageUrl={detail.picture}
-                                // name={detail.name.toLocaleLowerCase()}
-                                // role={detail.role.toLocaleLowerCase()}
-                                // domain={detail.domain.toLocaleLowerCase()}
                             />
                         );
                     })

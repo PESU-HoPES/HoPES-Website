@@ -13,13 +13,13 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id, date }) => {
     const isInView = useInView(ref, { once: true });
 
     return (
-        <AnimatePresence>
+        // <AnimatePresence>
             <motion.div
                 ref={ref}
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 exit={{ opacity: 0, duration: 1 }}
-                className='m-4 flex max-w-[500px] flex-col items-center justify-start gap-y-2 place-self-center self-stretch sm:mx-2 sm:self-start md:m-5 md:max-w-[550px] lg:max-w-[600px]'
+                className='snap-always snap-start m-4 flex max-w-[500px] flex-col items-center justify-start gap-y-2 place-self-center self-stretch sm:mx-2 sm:self-start md:m-5 md:max-w-[550px] lg:max-w-[600px]'
             >
                 <motion.div
                     layout
@@ -155,7 +155,7 @@ const WorkCard = ({ imageUrl, heading, desc, clubs, categories, id, date }) => {
                     </div>
                 </motion.div>
             </motion.div>
-        </AnimatePresence>
+        // </AnimatePresence>
     );
 };
 

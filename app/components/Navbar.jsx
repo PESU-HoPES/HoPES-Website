@@ -98,7 +98,7 @@ export default function Navbar() {
                             <motion.li
                                 key={navlink.id}
                                 layout
-                                className='-my-3 inline-block md:-my-4'
+                                className='-my-3 inline-block md:-my-4 text-shadow'
                                 whileHover={{
                                     x: 50,
                                     scale: 1.1,

@@ -12,7 +12,7 @@ export default function Subnavbar({ label, setLabel, filterTabs }) {
 
     return (
 
-        <div className={`w-screen overflow-x-auto px-8 no-x-scroll relative flex space-x-1 mt-[3vmin] mb-[2vmin]  ${filterTabs.length <= 6 ? 'ss:justify-center' : 'md:justify-center'}`}>
+        <div className={` w-screen overflow-x-auto px-8 no-x-scroll relative flex space-x-1 mt-[3vmin] mb-[2vmin]  ${filterTabs.length <= 6 ? 'ss:justify-center' : 'md:justify-center'}`}>
             {filterTabs.map((tab) => (
                 <button
                     key={tab.id}

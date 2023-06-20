@@ -25,23 +25,17 @@ const WorkSection = () => {
 
             <motion.div
                 layout
-                className='place-content-center grid grid-cols-1 place-items-stretch gap-x-3 gap-y-6 md:gap-y-1 sm:grid-cols-2 3xl:grid-cols-4 ss:place-items-center md:mx-20 lg:grid-cols-3'
+                className='snap-x snap-mandatory place-content-center grid grid-cols-1 place-items-stretch gap-x-3 gap-y-6 md:gap-y-1 sm:grid-cols-2 3xl:grid-cols-4 ss:place-items-center md:mx-20 lg:grid-cols-3'
             >
                 {/* <motion.div layout className='flex items-start justify-center flex-wrap gap-y-5 gap-x-1 ss:gap-x-4'> */}
-                <LayoutGroup>
+                {/* <LayoutGroup className=''> */}
                     {workData.map((data) => (
                         <WorkCard
                             key={data.id}
                             {...data}
-                            // id={data.id}
-                            // heading={data.heading}
-                            // desc={data.desc}
-                            // imageUrl={data.imageUrl}
-                            // clubs={data.clubs}
-                            // categories={data.categories.slice(1)}
                         />
                     ))}
-                </LayoutGroup>
+                {/* </LayoutGroup> */}
             </motion.div>
         </div>
     );
