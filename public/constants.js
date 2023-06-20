@@ -260,36 +260,35 @@ export const carouseldata = [
         imageUrl: 'https://media.istockphoto.com/id/1299954175/it/foto/villa-cubica-moderna.jpg?s=612x612&w=0&k=20&c=DhGhb3c1E3DW_fbrWJ_R_Zh0Lbwu6syFeRLsKlZ9no8=',
         link: '/',
     },
-    {
-        title: 'Munich',
-        num: 7,
-        imageUrl: 'https://media.istockphoto.com/id/926689776/it/foto/vista-ad-angolo-basso-dei-grattacieli-di-new-york.jpg?s=612x612&w=0&k=20&c=DmEB0Ty7ZwDnBoU5SuA8FNevOp4G1UcECw5aS4vA9A8=',
-        link: '/',
-    },
-    {
-        title: 'Venice',
-        num: 8,
-        imageUrl: 'https://media.istockphoto.com/id/1191376167/it/foto/villa-dellisola.jpg?s=612x612&w=0&k=20&c=PKslWo4FdbjinohKQlK_oWL34jqAsnzMTdy2bxEAf-I=',
-        link: '/',
-    },{
-        title: 'Oslo',
-        num: 9,
-        imageUrl: 'https://media.istockphoto.com/id/184316397/it/foto/londra-edifici-aziendali.jpg?s=612x612&w=0&k=20&c=XqrRxEPzFnwRFk7PQrCiu9-FPfCTPyMe5BKKaxYXCs8=',
-        link: '/',   
-    },
-    {
-        title: 'London',
-        num: 10,
-        imageUrl: 'https://media.istockphoto.com/id/184619832/it/foto/distretto-finanziario-al-crepuscolo-londra.jpg?s=612x612&w=0&k=20&c=RAThrJOBY6vhlT6-kQpu9-9jLEzWToYfdw46S8B0Mu0=',
-        link: '/',   
-    },
-    {
-        title: 'NY',
-        num: 1,
-        imageUrl: 'https://media.istockphoto.com/id/184619832/it/foto/distretto-finanziario-al-crepuscolo-londra.jpg?s=612x612&w=0&k=20&c=RAThrJOBY6vhlT6-kQpu9-9jLEzWToYfdw46S8B0Mu0=',
-        link: '/',   
-    },
-
+    // {
+    //     title: 'Munich',
+    //     num: 7,
+    //     imageUrl: 'https://media.istockphoto.com/id/926689776/it/foto/vista-ad-angolo-basso-dei-grattacieli-di-new-york.jpg?s=612x612&w=0&k=20&c=DmEB0Ty7ZwDnBoU5SuA8FNevOp4G1UcECw5aS4vA9A8=',
+    //     link: '/',
+    // },
+    // {
+    //     title: 'Venice',
+    //     num: 8,
+    //     imageUrl: 'https://media.istockphoto.com/id/1191376167/it/foto/villa-dellisola.jpg?s=612x612&w=0&k=20&c=PKslWo4FdbjinohKQlK_oWL34jqAsnzMTdy2bxEAf-I=',
+    //     link: '/',
+    // },{
+    //     title: 'Oslo',
+    //     num: 9,
+    //     imageUrl: 'https://media.istockphoto.com/id/184316397/it/foto/londra-edifici-aziendali.jpg?s=612x612&w=0&k=20&c=XqrRxEPzFnwRFk7PQrCiu9-FPfCTPyMe5BKKaxYXCs8=',
+    //     link: '/',   
+    // },
+    // {
+    //     title: 'London',
+    //     num: 10,
+    //     imageUrl: 'https://media.istockphoto.com/id/184619832/it/foto/distretto-finanziario-al-crepuscolo-londra.jpg?s=612x612&w=0&k=20&c=RAThrJOBY6vhlT6-kQpu9-9jLEzWToYfdw46S8B0Mu0=',
+    //     link: '/',   
+    // },
+    // {
+    //     title: 'NY',
+    //     num: 11,
+    //     imageUrl: 'https://media.istockphoto.com/id/184619832/it/foto/distretto-finanziario-al-crepuscolo-londra.jpg?s=612x612&w=0&k=20&c=RAThrJOBY6vhlT6-kQpu9-9jLEzWToYfdw46S8B0Mu0=',
+    //     link: '/',   
+    // },
 ]
 
 export const filterRoles = [
@@ -649,4 +648,3 @@ export const teamDetails = [
         categories: ['all', 'domain head', 'campaigning and pr', 'campaigning', 'pr']
     },
 ]
-

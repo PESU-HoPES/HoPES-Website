@@ -33,6 +33,7 @@ const WorkSection = () => {
                         <WorkCard
                             key={data.id}
                             {...data}
+                            length={workData.length}
                         />
                     ))}
                 {/* </LayoutGroup> */}
